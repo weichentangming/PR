@@ -1,0 +1,21 @@
+nohup: ignoring input
+/home/chentangming/env/anaconda3/envs/py36/lib/python3.6/site-packages/torch/nn/functional.py:1374: UserWarning: nn.functional.tanh is deprecated. Use torch.tanh instead.
+  warnings.warn("nn.functional.tanh is deprecated. Use torch.tanh instead.")
+Traceback (most recent call last):
+  File "main_count.py", line 82, in <module>
+    test_score = model.sample(test_dset, test_loader)
+  File "/home/chentangming/workspace/VQA/aaai_extension/MM_pyramid/models/Count_model.py", line 81, in sample
+    json.dump(results, open('Count.json', 'w'))
+  File "/home/chentangming/env/anaconda3/envs/py36/lib/python3.6/json/__init__.py", line 179, in dump
+    for chunk in iterable:
+  File "/home/chentangming/env/anaconda3/envs/py36/lib/python3.6/json/encoder.py", line 428, in _iterencode
+    yield from _iterencode_list(o, _current_indent_level)
+  File "/home/chentangming/env/anaconda3/envs/py36/lib/python3.6/json/encoder.py", line 325, in _iterencode_list
+    yield from chunks
+  File "/home/chentangming/env/anaconda3/envs/py36/lib/python3.6/json/encoder.py", line 404, in _iterencode_dict
+    yield from chunks
+  File "/home/chentangming/env/anaconda3/envs/py36/lib/python3.6/json/encoder.py", line 437, in _iterencode
+    o = _default(o)
+  File "/home/chentangming/env/anaconda3/envs/py36/lib/python3.6/json/encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'ndarray' is not JSON serializable

@@ -1,0 +1,5 @@
+nohup: ignoring input
+/home/chentangming/env/anaconda3/envs/py36/lib/python3.6/site-packages/torch/nn/functional.py:1374: UserWarning: nn.functional.tanh is deprecated. Use torch.tanh instead.
+  warnings.warn("nn.functional.tanh is deprecated. Use torch.tanh instead.")
+/home/chentangming/env/anaconda3/envs/py36/lib/python3.6/site-packages/torch/nn/_reduction.py:15: UserWarning: reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.
+  warnings.warn("reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.")

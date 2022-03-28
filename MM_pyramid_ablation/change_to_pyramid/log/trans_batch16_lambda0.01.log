@@ -1,0 +1,165 @@
+[info] putils: Enhanced Deep Learning Putils loaded successfully, enjoy it!
+parameters: Namespace(Multi_Choice=5, batch_size=16, epochs=50, feat_category='resnet', feat_path='/hhd12306/chentangming/dataset/tgif/features', glove_file_path='/hhd12306/chentangming/dataset/models/glove/glove.6B.300d.txt', lambda=0.01, max_len=36, model='ParalCoAtt', num_hid=1024, output='saved_models/glimpse%d-subnum%d-reasonstep%d-lambda%s-cg-shuffle/%s', reasonSteps=1, scale=[1024, 512, 256], seed=1000, sentense_file_path='data/dataset', sub_nums=8, task='Trans', test_phase=False)
+loading dictionary from ./data/trans_dict.pkl
+loading dictionary done.
+exsit path
+exsit path
+========start train========
+optim: adamax lr=0.0010, decay_step=2, decay_rate=0.50, grad_clip=0.25
+gradual warmup lr: 0.0005
+===========Epoch 0 's train==========
+iter:  0 loss: 0.794309 disagreement: 0.672363
+iter:  100 loss: 0.587591 disagreement: 0.025343
+iter:  200 loss: 0.614694 disagreement: 0.015724
+iter:  300 loss: 0.416535 disagreement: 0.016070
+iter:  400 loss: 0.592566 disagreement: 0.012109
+iter:  500 loss: 0.251889 disagreement: 0.011711
+iter:  600 loss: 0.267651 disagreement: 0.015223
+iter:  700 loss: 0.543157 disagreement: 0.011480
+iter:  800 loss: 0.267874 disagreement: 0.013043
+iter:  900 loss: 0.263763 disagreement: 0.010928
+iter:  1000 loss: 0.239049 disagreement: 0.011156
+iter:  1100 loss: 0.391185 disagreement: 0.010539
+iter:  1200 loss: 0.448118 disagreement: 0.014203
+iter:  1300 loss: 0.111560 disagreement: 0.009723
+iter:  1400 loss: 0.377669 disagreement: 0.010598
+iter:  1500 loss: 0.133101 disagreement: 0.010975
+iter:  1600 loss: 0.252586 disagreement: 0.014774
+iter:  1700 loss: 0.322535 disagreement: 0.012746
+iter:  1800 loss: 0.296376 disagreement: 0.010997
+iter:  1900 loss: 0.521444 disagreement: 0.011283
+iter:  2000 loss: 0.498516 disagreement: 0.010888
+iter:  2100 loss: 0.296630 disagreement: 0.011577
+iter:  2200 loss: 0.454559 disagreement: 0.009694
+iter:  2300 loss: 0.483212 disagreement: 0.009879
+iter:  2400 loss: 0.322983 disagreement: 0.009929
+iter:  2500 loss: 0.537915 disagreement: 0.012040
+iter:  2600 loss: 0.377796 disagreement: 0.011407
+iter:  2700 loss: 0.203761 disagreement: 0.012934
+iter:  2800 loss: 0.233869 disagreement: 0.009215
+iter:  2900 loss: 0.388628 disagreement: 0.010993
+iter:  3000 loss: 0.361404 disagreement: 0.010051
+iter:  3100 loss: 0.453774 disagreement: 0.010527
+iter:  3200 loss: 0.407001 disagreement: 0.011350
+	train_loss: 1.85
+===========Epoch 0 's test==========
+epoch 0, time: 518.34
+	eval score: 72.72 
+	current best eval score: 72.72 
+gradual warmup lr: 0.0010
+===========Epoch 1 's train==========
+iter:  0 loss: 0.454206 disagreement: 0.010632
+iter:  100 loss: 0.567989 disagreement: 0.009012
+iter:  200 loss: 0.223604 disagreement: 0.010461
+iter:  300 loss: 0.237684 disagreement: 0.009715
+iter:  400 loss: 0.433995 disagreement: 0.009327
+iter:  500 loss: 0.355274 disagreement: 0.010994
+iter:  600 loss: 0.505523 disagreement: 0.012000
+iter:  700 loss: 0.325394 disagreement: 0.010333
+iter:  800 loss: 0.312792 disagreement: 0.011346
+iter:  900 loss: 0.162480 disagreement: 0.008839
+iter:  1000 loss: 0.320691 disagreement: 0.010590
+iter:  1100 loss: 0.227635 disagreement: 0.011591
+iter:  1200 loss: 0.300304 disagreement: 0.010167
+iter:  1300 loss: 0.281685 disagreement: 0.010357
+iter:  1400 loss: 0.228775 disagreement: 0.009538
+iter:  1500 loss: 0.275144 disagreement: 0.009465
+iter:  1600 loss: 0.228584 disagreement: 0.010525
+iter:  1700 loss: 0.501841 disagreement: 0.009895
+iter:  1800 loss: 0.191917 disagreement: 0.009286
+iter:  1900 loss: 0.471444 disagreement: 0.008637
+iter:  2000 loss: 0.499399 disagreement: 0.009521
+iter:  2100 loss: 0.456791 disagreement: 0.009336
+iter:  2200 loss: 0.088878 disagreement: 0.008865
+iter:  2300 loss: 0.510002 disagreement: 0.008923
+iter:  2400 loss: 0.201819 disagreement: 0.009371
+iter:  2500 loss: 0.209916 disagreement: 0.009321
+iter:  2600 loss: 0.184796 disagreement: 0.010100
+iter:  2700 loss: 0.189085 disagreement: 0.009281
+iter:  2800 loss: 0.270122 disagreement: 0.008454
+iter:  2900 loss: 0.177532 disagreement: 0.009173
+iter:  3000 loss: 0.150967 disagreement: 0.009457
+iter:  3100 loss: 0.366115 disagreement: 0.008701
+iter:  3200 loss: 0.156154 disagreement: 0.009574
+	train_loss: 1.41
+===========Epoch 1 's test==========
+epoch 1, time: 446.83
+	eval score: 77.54 
+	current best eval score: 77.54 
+gradual warmup lr: 0.0015
+===========Epoch 2 's train==========
+iter:  0 loss: 0.340973 disagreement: 0.010130
+iter:  100 loss: 0.121953 disagreement: 0.009052
+iter:  200 loss: 0.113165 disagreement: 0.008634
+iter:  300 loss: 0.158282 disagreement: 0.010329
+iter:  400 loss: 0.248695 disagreement: 0.009816
+iter:  500 loss: 0.399120 disagreement: 0.008604
+iter:  600 loss: 0.169331 disagreement: 0.009215
+iter:  700 loss: 0.143770 disagreement: 0.008682
+iter:  800 loss: 0.136342 disagreement: 0.008445
+iter:  900 loss: 0.186552 disagreement: 0.008177
+iter:  1000 loss: 0.091100 disagreement: 0.009146
+iter:  1100 loss: 0.172101 disagreement: 0.008474
+iter:  1200 loss: 0.344802 disagreement: 0.008626
+iter:  1300 loss: 0.356506 disagreement: 0.008888
+iter:  1400 loss: 0.340625 disagreement: 0.007516
+iter:  1500 loss: 0.168604 disagreement: 0.008338
+iter:  1600 loss: 0.265580 disagreement: 0.008068
+iter:  1700 loss: 0.155707 disagreement: 0.008026
+iter:  1800 loss: 0.239247 disagreement: 0.008751
+iter:  1900 loss: 0.238453 disagreement: 0.009041
+iter:  2000 loss: 0.204470 disagreement: 0.007557
+iter:  2100 loss: 0.352632 disagreement: 0.008863
+iter:  2200 loss: 0.257321 disagreement: 0.008991
+iter:  2300 loss: 0.384218 disagreement: 0.007846
+iter:  2400 loss: 0.313762 disagreement: 0.009062
+iter:  2500 loss: 0.128027 disagreement: 0.008178
+iter:  2600 loss: 0.496448 disagreement: 0.008456
+iter:  2700 loss: 0.188404 disagreement: 0.007873
+iter:  2800 loss: 0.219923 disagreement: 0.007847
+iter:  2900 loss: 0.205773 disagreement: 0.008668
+iter:  3000 loss: 0.139516 disagreement: 0.009203
+iter:  3100 loss: 0.210872 disagreement: 0.008330
+iter:  3200 loss: 0.139704 disagreement: 0.008164
+	train_loss: 1.20
+===========Epoch 2 's test==========
+epoch 2, time: 444.74
+	eval score: 79.25 
+	current best eval score: 79.25 
+gradual warmup lr: 0.0020
+===========Epoch 3 's train==========
+iter:  0 loss: 0.123580 disagreement: 0.008064
+iter:  100 loss: 0.301824 disagreement: 0.008610
+iter:  200 loss: 0.278249 disagreement: 0.008922
+iter:  300 loss: 0.193296 disagreement: 0.007802
+iter:  400 loss: 0.200925 disagreement: 0.009010
+iter:  500 loss: 0.353366 disagreement: 0.008521
+iter:  600 loss: 0.356190 disagreement: 0.008594
+iter:  700 loss: 0.281334 disagreement: 0.009099
+iter:  800 loss: 0.274421 disagreement: 0.007180
+iter:  900 loss: 0.218540 disagreement: 0.008426
+iter:  1000 loss: 0.235733 disagreement: 0.009587
+iter:  1100 loss: 0.075102 disagreement: 0.007908
+iter:  1200 loss: 0.219914 disagreement: 0.009341
+iter:  1300 loss: 0.441179 disagreement: 0.008313
+iter:  1400 loss: 0.132633 disagreement: 0.007895
+iter:  1500 loss: 0.012956 disagreement: 0.009780
+iter:  1600 loss: 0.329243 disagreement: 0.007387
+iter:  1700 loss: 0.336317 disagreement: 0.009907
+iter:  1800 loss: 0.483586 disagreement: 0.008440
+iter:  1900 loss: 0.344753 disagreement: 0.006980
+iter:  2000 loss: 0.111577 disagreement: 0.008343
+iter:  2100 loss: 0.307871 disagreement: 0.007864
+iter:  2200 loss: 0.244203 disagreement: 0.007534
+iter:  2300 loss: 0.078762 disagreement: 0.007547
+iter:  2400 loss: 0.317283 disagreement: 0.008416
+iter:  2500 loss: 0.118349 disagreement: 0.008001
+iter:  2600 loss: 0.115703 disagreement: 0.007641
+iter:  2700 loss: 0.147311 disagreement: 0.008283
+iter:  2800 loss: 0.288604 disagreement: 0.007183
+iter:  2900 loss: 0.156305 disagreement: 0.007203
+iter:  3000 loss: 0.343045 disagreement: 0.007022
+iter:  3100 loss: 0.089876 disagreement: 0.007660
+iter:  3200 loss: 0.123205 disagreement: 0.007617
+	train_loss: 1.11
+===========Epoch 3 's test==========

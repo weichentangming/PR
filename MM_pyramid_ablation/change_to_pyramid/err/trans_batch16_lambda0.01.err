@@ -1,0 +1,25 @@
+nohup: ignoring input
+/home/chentangming/env/anaconda3/envs/py36/lib/python3.6/site-packages/torch/nn/functional.py:1374: UserWarning: nn.functional.tanh is deprecated. Use torch.tanh instead.
+  warnings.warn("nn.functional.tanh is deprecated. Use torch.tanh instead.")
+Traceback (most recent call last):
+  File "main_trans.py", line 67, in <module>
+    train(model, train_loader, eval_loader, params)
+  File "/home/chentangming/workspace/VQA/aaai_extension/MM_pyramid/MM_pyramid_ablation/change_to_pyramid/train.py", line 132, in train
+    eval_score= model.evaluate(eval_loader)
+  File "/home/chentangming/workspace/VQA/aaai_extension/MM_pyramid/MM_pyramid_ablation/change_to_pyramid/models/Trans_model.py", line 44, in evaluate
+    for v, q, q_embed, a in iter(dataloader):
+  File "/home/chentangming/env/anaconda3/envs/py36/lib/python3.6/site-packages/torch/utils/data/dataloader.py", line 193, in __iter__
+    return _DataLoaderIter(self)
+  File "/home/chentangming/env/anaconda3/envs/py36/lib/python3.6/site-packages/torch/utils/data/dataloader.py", line 469, in __init__
+    w.start()
+  File "/home/chentangming/env/anaconda3/envs/py36/lib/python3.6/multiprocessing/process.py", line 105, in start
+    self._popen = self._Popen(self)
+  File "/home/chentangming/env/anaconda3/envs/py36/lib/python3.6/multiprocessing/context.py", line 223, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+  File "/home/chentangming/env/anaconda3/envs/py36/lib/python3.6/multiprocessing/context.py", line 277, in _Popen
+    return Popen(process_obj)
+  File "/home/chentangming/env/anaconda3/envs/py36/lib/python3.6/multiprocessing/popen_fork.py", line 19, in __init__
+    self._launch(process_obj)
+  File "/home/chentangming/env/anaconda3/envs/py36/lib/python3.6/multiprocessing/popen_fork.py", line 66, in _launch
+    self.pid = os.fork()
+OSError: [Errno 12] Cannot allocate memory

@@ -1,0 +1,2010 @@
+[info] putils: Enhanced Deep Learning Putils loaded successfully, enjoy it!
+parameters: Namespace(Multi_Choice=5, batch_size=16, epochs=50, feat_category='resnet', feat_path='/hhd12306/chentangming/dataset/tgif/features', glove_file_path='/hhd12306/chentangming/dataset/models/glove/glove.6B.300d.txt', lambda=0.1, max_len=36, model='ParalCoAtt', num_hid=1024, output='saved_models/glimpse%d-subnum%d-reasonstep%d-lambda%s-cg-shuffle/%s', reasonSteps=1, scale=[1024, 512, 256], seed=1000, sentense_file_path='data/dataset', sub_nums=8, task='Trans', test_phase=False)
+loading dictionary from ./data/trans_dict.pkl
+loading dictionary done.
+exsit path
+exsit path
+3
+========start train========
+optim: adamax lr=0.0010, decay_step=2, decay_rate=0.50, grad_clip=0.25
+gradual warmup lr: 0.0005
+===========Epoch 0 's train==========
+iter:  0 loss: 0.798029 disagreement: 0.053787
+iter:  100 loss: 0.416322 disagreement: -0.893584
+iter:  200 loss: 0.272646 disagreement: -0.943189
+iter:  300 loss: 0.279863 disagreement: -0.965422
+iter:  400 loss: 0.104784 disagreement: -0.976495
+iter:  500 loss: 0.077784 disagreement: -0.983231
+iter:  600 loss: 0.355999 disagreement: -0.987246
+iter:  700 loss: 0.709670 disagreement: -0.990215
+iter:  800 loss: 0.401206 disagreement: -0.992784
+iter:  900 loss: 0.249701 disagreement: -0.993580
+iter:  1000 loss: 0.368893 disagreement: -0.995431
+iter:  1100 loss: 0.270453 disagreement: -0.993558
+iter:  1200 loss: 0.499366 disagreement: -0.996231
+iter:  1300 loss: 0.129543 disagreement: -0.996697
+iter:  1400 loss: 0.175606 disagreement: -0.997053
+iter:  1500 loss: 0.202669 disagreement: -0.997094
+iter:  1600 loss: 0.225528 disagreement: -0.997338
+iter:  1700 loss: 0.227222 disagreement: -0.997421
+iter:  1800 loss: 0.217118 disagreement: -0.997806
+iter:  1900 loss: 0.508109 disagreement: -0.997464
+iter:  2000 loss: 0.276601 disagreement: -0.998010
+iter:  2100 loss: 0.044809 disagreement: -0.998229
+iter:  2200 loss: 0.351552 disagreement: -0.998346
+iter:  2300 loss: -0.023736 disagreement: -0.998486
+iter:  2400 loss: 0.145301 disagreement: -0.997223
+iter:  2500 loss: 0.368980 disagreement: -0.997978
+iter:  2600 loss: 0.498322 disagreement: -0.998236
+iter:  2700 loss: 0.313992 disagreement: -0.996433
+iter:  2800 loss: 0.050942 disagreement: -0.997806
+iter:  2900 loss: 0.187730 disagreement: -0.996700
+iter:  3000 loss: 0.168943 disagreement: -0.998075
+iter:  3100 loss: 0.428088 disagreement: -0.997732
+iter:  3200 loss: 0.169233 disagreement: -0.998419
+	train_loss: 1.37
+===========Epoch 0 's test==========
+epoch 0, time: 1908.08
+	eval score: 72.21 
+	current best eval score: 72.21 
+gradual warmup lr: 0.0010
+===========Epoch 1 's train==========
+iter:  0 loss: 0.254528 disagreement: -0.997967
+iter:  100 loss: 0.298681 disagreement: -0.997667
+iter:  200 loss: 0.291321 disagreement: -0.995526
+iter:  300 loss: 0.445145 disagreement: -0.998885
+iter:  400 loss: 0.376481 disagreement: -0.998539
+iter:  500 loss: 0.201193 disagreement: -0.997616
+iter:  600 loss: 0.314669 disagreement: -0.999113
+iter:  700 loss: 0.190249 disagreement: -0.998879
+iter:  800 loss: 0.218488 disagreement: -0.999239
+iter:  900 loss: 0.110729 disagreement: -0.999282
+iter:  1000 loss: 0.238053 disagreement: -0.995234
+iter:  1100 loss: 0.062656 disagreement: -0.998508
+iter:  1200 loss: 0.033887 disagreement: -0.998760
+iter:  1300 loss: 0.115901 disagreement: -0.998331
+iter:  1400 loss: 0.086569 disagreement: -0.999064
+iter:  1500 loss: 0.096069 disagreement: -0.999379
+iter:  1600 loss: 0.225739 disagreement: -0.999126
+iter:  1700 loss: 0.194843 disagreement: -0.996900
+iter:  1800 loss: 0.296262 disagreement: -0.999215
+iter:  1900 loss: 0.037763 disagreement: -0.999392
+iter:  2000 loss: 0.095233 disagreement: -0.998937
+iter:  2100 loss: 0.231649 disagreement: -0.998789
+iter:  2200 loss: 0.169662 disagreement: -0.999032
+iter:  2300 loss: 0.185011 disagreement: -0.998047
+iter:  2400 loss: 0.063674 disagreement: -0.998845
+iter:  2500 loss: 0.197768 disagreement: -0.998642
+iter:  2600 loss: 0.155732 disagreement: -0.999258
+iter:  2700 loss: 0.100831 disagreement: -0.996933
+iter:  2800 loss: 0.170465 disagreement: -0.999277
+iter:  2900 loss: 0.078070 disagreement: -0.998735
+iter:  3000 loss: 0.110479 disagreement: -0.999162
+iter:  3100 loss: 0.164650 disagreement: -0.999456
+iter:  3200 loss: 0.147246 disagreement: -0.999132
+	train_loss: 0.91
+===========Epoch 1 's test==========
+epoch 1, time: 1857.67
+	eval score: 78.18 
+	current best eval score: 78.18 
+gradual warmup lr: 0.0015
+===========Epoch 2 's train==========
+iter:  0 loss: 0.229842 disagreement: -0.999424
+iter:  100 loss: 0.106415 disagreement: -0.999434
+iter:  200 loss: 0.255860 disagreement: -0.999550
+iter:  300 loss: 0.363731 disagreement: -0.999456
+iter:  400 loss: 0.071277 disagreement: -0.999574
+iter:  500 loss: 0.076578 disagreement: -0.999567
+iter:  600 loss: 0.298771 disagreement: -0.999587
+iter:  700 loss: 0.218931 disagreement: -0.999435
+iter:  800 loss: 0.150885 disagreement: -0.999574
+iter:  900 loss: 0.221419 disagreement: -0.999507
+iter:  1000 loss: 0.202020 disagreement: -0.999597
+iter:  1100 loss: 0.227624 disagreement: -0.999588
+iter:  1200 loss: 0.051940 disagreement: -0.999667
+iter:  1300 loss: 0.188408 disagreement: -0.999649
+iter:  1400 loss: 0.177363 disagreement: -0.999626
+iter:  1500 loss: 0.347545 disagreement: -0.999588
+iter:  1600 loss: 0.114804 disagreement: -0.999144
+iter:  1700 loss: 0.061444 disagreement: -0.999724
+iter:  1800 loss: 0.102889 disagreement: -0.999668
+iter:  1900 loss: 0.123073 disagreement: -0.999751
+iter:  2000 loss: 0.073767 disagreement: -0.999601
+iter:  2100 loss: 0.121348 disagreement: -0.999755
+iter:  2200 loss: 0.182566 disagreement: -0.996296
+iter:  2300 loss: 0.187996 disagreement: -0.999767
+iter:  2400 loss: -0.057702 disagreement: -0.999754
+iter:  2500 loss: 0.183888 disagreement: -0.999728
+iter:  2600 loss: 0.144011 disagreement: -0.999744
+iter:  2700 loss: 0.071950 disagreement: -0.999716
+iter:  2800 loss: 0.245066 disagreement: -0.999765
+iter:  2900 loss: 0.025479 disagreement: -0.999765
+iter:  3000 loss: 0.549485 disagreement: -0.999594
+iter:  3100 loss: 0.201202 disagreement: -0.999420
+iter:  3200 loss: 0.093716 disagreement: -0.999759
+	train_loss: 0.68
+===========Epoch 2 's test==========
+epoch 2, time: 1899.28
+	eval score: 77.92 
+	current best eval score: 78.18 
+gradual warmup lr: 0.0020
+===========Epoch 3 's train==========
+iter:  0 loss: 0.108045 disagreement: -0.999747
+iter:  100 loss: 0.126141 disagreement: -0.999768
+iter:  200 loss: 0.142112 disagreement: -0.999756
+iter:  300 loss: 0.145600 disagreement: -0.999287
+iter:  400 loss: 0.209813 disagreement: -0.999051
+iter:  500 loss: 0.083765 disagreement: -0.999794
+iter:  600 loss: 0.112834 disagreement: -0.999765
+iter:  700 loss: 0.107676 disagreement: -0.999668
+iter:  800 loss: 0.166977 disagreement: -0.999714
+iter:  900 loss: 0.085937 disagreement: -0.999782
+iter:  1000 loss: 0.122053 disagreement: -0.999748
+iter:  1100 loss: 0.114026 disagreement: -0.997883
+iter:  1200 loss: 0.120776 disagreement: -0.999185
+iter:  1300 loss: 0.184363 disagreement: -0.999768
+iter:  1400 loss: 0.115991 disagreement: -0.999743
+iter:  1500 loss: 0.105805 disagreement: -0.999548
+iter:  1600 loss: 0.276098 disagreement: -0.999618
+iter:  1700 loss: 0.026340 disagreement: -0.999814
+iter:  1800 loss: -0.064397 disagreement: -0.999840
+iter:  1900 loss: 0.039520 disagreement: -0.999774
+iter:  2000 loss: 0.074756 disagreement: -0.999833
+iter:  2100 loss: 0.073404 disagreement: -0.999766
+iter:  2200 loss: 0.115107 disagreement: -0.999756
+iter:  2300 loss: -0.009822 disagreement: -0.999864
+iter:  2400 loss: 0.140877 disagreement: -0.999539
+iter:  2500 loss: 0.188116 disagreement: -0.999868
+iter:  2600 loss: 0.077538 disagreement: -0.999652
+iter:  2700 loss: 0.031316 disagreement: -0.999870
+iter:  2800 loss: 0.343324 disagreement: -0.998911
+iter:  2900 loss: 0.128959 disagreement: -0.999713
+iter:  3000 loss: 0.019075 disagreement: -0.998695
+iter:  3100 loss: 0.318072 disagreement: -0.999865
+iter:  3200 loss: 0.150585 disagreement: -0.999804
+	train_loss: 0.59
+===========Epoch 3 's test==========
+epoch 3, time: 2062.55
+	eval score: 79.54 
+	current best eval score: 79.54 
+lr: 0.002000
+===========Epoch 4 's train==========
+iter:  0 loss: 0.044094 disagreement: -0.999871
+iter:  100 loss: 0.165064 disagreement: -0.999821
+iter:  200 loss: 0.160173 disagreement: -0.999840
+iter:  300 loss: -0.050965 disagreement: -0.999856
+iter:  400 loss: 0.071578 disagreement: -0.999794
+iter:  500 loss: 0.017896 disagreement: -0.999811
+iter:  600 loss: 0.207412 disagreement: -0.999892
+iter:  700 loss: -0.028788 disagreement: -0.999866
+iter:  800 loss: 0.227551 disagreement: -0.999844
+iter:  900 loss: 0.149910 disagreement: -0.999829
+iter:  1000 loss: -0.011161 disagreement: -0.999864
+iter:  1100 loss: 0.188429 disagreement: -0.999893
+iter:  1200 loss: -0.011438 disagreement: -0.999800
+iter:  1300 loss: 0.166550 disagreement: -0.999897
+iter:  1400 loss: -0.007120 disagreement: -0.999856
+iter:  1500 loss: 0.193600 disagreement: -0.999893
+iter:  1600 loss: 0.114034 disagreement: -0.999860
+iter:  1700 loss: 0.018211 disagreement: -0.999867
+iter:  1800 loss: 0.063692 disagreement: -0.999911
+iter:  1900 loss: 0.127700 disagreement: -0.999901
+iter:  2000 loss: 0.207639 disagreement: -0.999564
+iter:  2100 loss: 0.099401 disagreement: -0.999767
+iter:  2200 loss: 0.035394 disagreement: -0.997380
+iter:  2300 loss: 0.033879 disagreement: -0.999608
+iter:  2400 loss: 0.243384 disagreement: -0.999429
+iter:  2500 loss: 0.033159 disagreement: -0.999858
+iter:  2600 loss: 0.121133 disagreement: -0.999486
+iter:  2700 loss: 0.053843 disagreement: -0.999838
+iter:  2800 loss: 0.105524 disagreement: -0.999856
+iter:  2900 loss: -0.063278 disagreement: -0.999897
+iter:  3000 loss: 0.096621 disagreement: -0.999887
+iter:  3100 loss: 0.125356 disagreement: -0.999562
+iter:  3200 loss: 0.075992 disagreement: -0.999901
+	train_loss: 0.50
+===========Epoch 4 's test==========
+epoch 4, time: 1835.96
+	eval score: 80.74 
+	current best eval score: 80.74 
+lr: 0.002000
+===========Epoch 5 's train==========
+iter:  0 loss: 0.098236 disagreement: -0.999878
+iter:  100 loss: 0.122320 disagreement: -0.999860
+iter:  200 loss: 0.233472 disagreement: -0.999894
+iter:  300 loss: -0.068370 disagreement: -0.999781
+iter:  400 loss: -0.038147 disagreement: -0.999841
+iter:  500 loss: 0.036969 disagreement: -0.999841
+iter:  600 loss: 0.103984 disagreement: -0.999917
+iter:  700 loss: 0.060461 disagreement: -0.999886
+iter:  800 loss: -0.000755 disagreement: -0.999873
+iter:  900 loss: -0.059855 disagreement: -0.999889
+iter:  1000 loss: 0.167167 disagreement: -0.999834
+iter:  1100 loss: 0.262941 disagreement: -0.999895
+iter:  1200 loss: 0.034654 disagreement: -0.999656
+iter:  1300 loss: 0.021582 disagreement: -0.999882
+iter:  1400 loss: 0.061451 disagreement: -0.999901
+iter:  1500 loss: -0.030666 disagreement: -0.999899
+iter:  1600 loss: 0.059116 disagreement: -0.999835
+iter:  1700 loss: 0.031708 disagreement: -0.999884
+iter:  1800 loss: 0.194075 disagreement: -0.999040
+iter:  1900 loss: 0.143935 disagreement: -0.999913
+iter:  2000 loss: 0.190742 disagreement: -0.999893
+iter:  2100 loss: 0.066922 disagreement: -0.999929
+iter:  2200 loss: 0.117231 disagreement: -0.999903
+iter:  2300 loss: 0.093593 disagreement: -0.999920
+iter:  2400 loss: 0.047877 disagreement: -0.999900
+iter:  2500 loss: 0.132960 disagreement: -0.999893
+iter:  2600 loss: 0.023069 disagreement: -0.999878
+iter:  2700 loss: 0.084750 disagreement: -0.999897
+iter:  2800 loss: 0.036009 disagreement: -0.999907
+iter:  2900 loss: 0.116968 disagreement: -0.999922
+iter:  3000 loss: -0.041255 disagreement: -0.999922
+iter:  3100 loss: 0.062883 disagreement: -0.999930
+iter:  3200 loss: -0.062047 disagreement: -0.999896
+	train_loss: 0.43
+===========Epoch 5 's test==========
+epoch 5, time: 1854.26
+	eval score: 80.52 
+	current best eval score: 80.74 
+lr: 0.002000
+===========Epoch 6 's train==========
+iter:  0 loss: 0.084685 disagreement: -0.999908
+iter:  100 loss: -0.051182 disagreement: -0.999907
+iter:  200 loss: 0.187031 disagreement: -0.999874
+iter:  300 loss: 0.036972 disagreement: -0.999828
+iter:  400 loss: 0.055183 disagreement: -0.999939
+iter:  500 loss: 0.039947 disagreement: -0.999906
+iter:  600 loss: 0.333487 disagreement: -0.999940
+iter:  700 loss: 0.033836 disagreement: -0.999936
+iter:  800 loss: 0.013279 disagreement: -0.999929
+iter:  900 loss: 0.073746 disagreement: -0.999927
+iter:  1000 loss: -0.002082 disagreement: -0.999926
+iter:  1100 loss: 0.271676 disagreement: -0.999915
+iter:  1200 loss: 0.063758 disagreement: -0.999919
+iter:  1300 loss: 0.106519 disagreement: -0.999920
+iter:  1400 loss: 0.070090 disagreement: -0.999931
+iter:  1500 loss: 0.138298 disagreement: -0.999933
+iter:  1600 loss: 0.197034 disagreement: -0.999909
+iter:  1700 loss: -0.046697 disagreement: -0.999952
+iter:  1800 loss: -0.034296 disagreement: -0.999931
+iter:  1900 loss: -0.017841 disagreement: -0.999941
+iter:  2000 loss: 0.183202 disagreement: -0.999925
+iter:  2100 loss: 0.014947 disagreement: -0.999937
+iter:  2200 loss: 0.421978 disagreement: -0.999932
+iter:  2300 loss: -0.026725 disagreement: -0.999945
+iter:  2400 loss: -0.041038 disagreement: -0.999864
+iter:  2500 loss: 0.138695 disagreement: -0.999955
+iter:  2600 loss: 0.214553 disagreement: -0.999882
+iter:  2700 loss: 0.320193 disagreement: -0.999871
+iter:  2800 loss: 0.076008 disagreement: -0.999956
+iter:  2900 loss: 0.173776 disagreement: -0.999932
+iter:  3000 loss: 0.100339 disagreement: -0.999953
+iter:  3100 loss: 0.097375 disagreement: -0.999950
+iter:  3200 loss: 0.151689 disagreement: -0.999914
+	train_loss: 0.37
+===========Epoch 6 's test==========
+epoch 6, time: 1853.34
+	eval score: 81.87 
+	current best eval score: 81.87 
+lr: 0.002000
+===========Epoch 7 's train==========
+iter:  0 loss: 0.015847 disagreement: -0.999953
+iter:  100 loss: 0.043403 disagreement: -0.999698
+iter:  200 loss: 0.014632 disagreement: -0.999806
+iter:  300 loss: 0.069888 disagreement: -0.999957
+iter:  400 loss: 0.329090 disagreement: -0.999919
+iter:  500 loss: -0.054244 disagreement: -0.999950
+iter:  600 loss: -0.058271 disagreement: -0.999966
+iter:  700 loss: -0.044998 disagreement: -0.999949
+iter:  800 loss: -0.011546 disagreement: -0.999955
+iter:  900 loss: 0.128974 disagreement: -0.999963
+iter:  1000 loss: 0.122126 disagreement: -0.999930
+iter:  1100 loss: -0.031801 disagreement: -0.999953
+iter:  1200 loss: -0.006268 disagreement: -0.999961
+iter:  1300 loss: -0.060584 disagreement: -0.999960
+iter:  1400 loss: 0.088106 disagreement: -0.999881
+iter:  1500 loss: 0.023544 disagreement: -0.999957
+iter:  1600 loss: 0.215835 disagreement: -0.999939
+iter:  1700 loss: -0.017261 disagreement: -0.999961
+iter:  1800 loss: 0.007200 disagreement: -0.999886
+iter:  1900 loss: 0.037690 disagreement: -0.999944
+iter:  2000 loss: 0.081588 disagreement: -0.999926
+iter:  2100 loss: -0.078693 disagreement: -0.999964
+iter:  2200 loss: 0.049649 disagreement: -0.999872
+iter:  2300 loss: 0.089599 disagreement: -0.999931
+iter:  2400 loss: 0.050878 disagreement: -0.999951
+iter:  2500 loss: 0.265170 disagreement: -0.999967
+iter:  2600 loss: -0.000776 disagreement: -0.999912
+iter:  2700 loss: 0.230652 disagreement: -0.999947
+iter:  2800 loss: 0.219732 disagreement: -0.999967
+iter:  2900 loss: 0.011802 disagreement: -0.999931
+iter:  3000 loss: 0.055185 disagreement: -0.999173
+iter:  3100 loss: 0.039480 disagreement: -0.999954
+iter:  3200 loss: 0.109833 disagreement: -0.999957
+	train_loss: 0.33
+===========Epoch 7 's test==========
+epoch 7, time: 1844.97
+	eval score: 81.84 
+	current best eval score: 81.87 
+lr: 0.002000
+===========Epoch 8 's train==========
+iter:  0 loss: -0.020194 disagreement: -0.999942
+iter:  100 loss: -0.042387 disagreement: -0.999932
+iter:  200 loss: 0.086708 disagreement: -0.999947
+iter:  300 loss: -0.010299 disagreement: -0.999191
+iter:  400 loss: 0.259449 disagreement: -0.999952
+iter:  500 loss: 0.200522 disagreement: -0.999959
+iter:  600 loss: 0.084170 disagreement: -0.999840
+iter:  700 loss: 0.010452 disagreement: -0.999953
+iter:  800 loss: 0.089047 disagreement: -0.999944
+iter:  900 loss: 0.051546 disagreement: -0.999946
+iter:  1000 loss: 0.156519 disagreement: -0.999965
+iter:  1100 loss: -0.032215 disagreement: -0.999955
+iter:  1200 loss: 0.024303 disagreement: -0.999942
+iter:  1300 loss: 0.101482 disagreement: -0.999963
+iter:  1400 loss: 0.002030 disagreement: -0.999931
+iter:  1500 loss: 0.152277 disagreement: -0.999959
+iter:  1600 loss: 0.071392 disagreement: -0.999954
+iter:  1700 loss: 0.018209 disagreement: -0.999945
+iter:  1800 loss: 0.141365 disagreement: -0.999934
+iter:  1900 loss: -0.009993 disagreement: -0.999972
+iter:  2000 loss: -0.010609 disagreement: -0.999966
+iter:  2100 loss: 0.015159 disagreement: -0.999956
+iter:  2200 loss: 0.124829 disagreement: -0.999972
+iter:  2300 loss: 0.201783 disagreement: -0.999952
+iter:  2400 loss: -0.052978 disagreement: -0.999953
+iter:  2500 loss: 0.078825 disagreement: -0.999965
+iter:  2600 loss: -0.025327 disagreement: -0.999949
+iter:  2700 loss: -0.050143 disagreement: -0.999944
+iter:  2800 loss: 0.040179 disagreement: -0.999950
+iter:  2900 loss: -0.031476 disagreement: -0.999751
+iter:  3000 loss: 0.059219 disagreement: -0.999948
+iter:  3100 loss: -0.017238 disagreement: -0.999953
+iter:  3200 loss: -0.053950 disagreement: -0.999914
+	train_loss: 0.29
+===========Epoch 8 's test==========
+epoch 8, time: 1843.90
+	eval score: 81.61 
+	current best eval score: 81.87 
+lr: 0.002000
+===========Epoch 9 's train==========
+iter:  0 loss: 0.343406 disagreement: -0.999957
+iter:  100 loss: 0.024055 disagreement: -0.999970
+iter:  200 loss: 0.117585 disagreement: -0.999966
+iter:  300 loss: -0.006600 disagreement: -0.999966
+iter:  400 loss: -0.036851 disagreement: -0.999975
+iter:  500 loss: -0.094809 disagreement: -0.999962
+iter:  600 loss: -0.006360 disagreement: -0.999950
+iter:  700 loss: 0.085084 disagreement: -0.999953
+iter:  800 loss: 0.272461 disagreement: -0.999955
+iter:  900 loss: 0.022762 disagreement: -0.999958
+iter:  1000 loss: 0.038713 disagreement: -0.999956
+iter:  1100 loss: -0.024450 disagreement: -0.999960
+iter:  1200 loss: -0.041740 disagreement: -0.999960
+iter:  1300 loss: 0.135507 disagreement: -0.999968
+iter:  1400 loss: 0.195160 disagreement: -0.999971
+iter:  1500 loss: 0.036150 disagreement: -0.999978
+iter:  1600 loss: 0.256539 disagreement: -0.999954
+iter:  1700 loss: 0.175183 disagreement: -0.999977
+iter:  1800 loss: 0.000617 disagreement: -0.999967
+iter:  1900 loss: 0.114538 disagreement: -0.998377
+iter:  2000 loss: 0.033385 disagreement: -0.999974
+iter:  2100 loss: 0.289357 disagreement: -0.999974
+iter:  2200 loss: 0.013717 disagreement: -0.999908
+iter:  2300 loss: -0.033415 disagreement: -0.999973
+iter:  2400 loss: 0.017103 disagreement: -0.999973
+iter:  2500 loss: -0.025335 disagreement: -0.999980
+iter:  2600 loss: 0.021334 disagreement: -0.999940
+iter:  2700 loss: 0.058237 disagreement: -0.999970
+iter:  2800 loss: 0.067932 disagreement: -0.999981
+iter:  2900 loss: 0.110178 disagreement: -0.999981
+iter:  3000 loss: -0.058207 disagreement: -0.999970
+iter:  3100 loss: -0.076002 disagreement: -0.999954
+iter:  3200 loss: -0.006279 disagreement: -0.999971
+	train_loss: 0.25
+===========Epoch 9 's test==========
+epoch 9, time: 1848.35
+	eval score: 81.58 
+	current best eval score: 81.87 
+decreased lr: 0.0010
+===========Epoch 10 's train==========
+iter:  0 loss: 0.034789 disagreement: -0.999920
+iter:  100 loss: 0.124744 disagreement: -0.999984
+iter:  200 loss: 0.163877 disagreement: -0.999986
+iter:  300 loss: -0.013290 disagreement: -0.999987
+iter:  400 loss: -0.012141 disagreement: -0.999989
+iter:  500 loss: 0.102015 disagreement: -0.999985
+iter:  600 loss: -0.056088 disagreement: -0.999987
+iter:  700 loss: -0.024481 disagreement: -0.999981
+iter:  800 loss: 0.049155 disagreement: -0.999985
+iter:  900 loss: 0.025527 disagreement: -0.999980
+iter:  1000 loss: -0.023144 disagreement: -0.999980
+iter:  1100 loss: -0.021348 disagreement: -0.999984
+iter:  1200 loss: 0.012009 disagreement: -0.999987
+iter:  1300 loss: 0.181751 disagreement: -0.999980
+iter:  1400 loss: 0.009206 disagreement: -0.999985
+iter:  1500 loss: -0.004936 disagreement: -0.999987
+iter:  1600 loss: 0.039998 disagreement: -0.999987
+iter:  1700 loss: 0.144082 disagreement: -0.999984
+iter:  1800 loss: 0.074851 disagreement: -0.999861
+iter:  1900 loss: -0.002723 disagreement: -0.999986
+iter:  2000 loss: 0.114058 disagreement: -0.999976
+iter:  2100 loss: 0.085278 disagreement: -0.999979
+iter:  2200 loss: -0.000762 disagreement: -0.999987
+iter:  2300 loss: 0.076650 disagreement: -0.999980
+iter:  2400 loss: -0.053832 disagreement: -0.999984
+iter:  2500 loss: -0.007567 disagreement: -0.999988
+iter:  2600 loss: 0.129762 disagreement: -0.999987
+iter:  2700 loss: -0.064457 disagreement: -0.999986
+iter:  2800 loss: 0.199502 disagreement: -0.999984
+iter:  2900 loss: -0.000911 disagreement: -0.999987
+iter:  3000 loss: 0.040511 disagreement: -0.999984
+iter:  3100 loss: -0.081340 disagreement: -0.999986
+iter:  3200 loss: 0.056865 disagreement: -0.999989
+	train_loss: 0.16
+===========Epoch 10 's test==========
+epoch 10, time: 1839.17
+	eval score: 81.85 
+	current best eval score: 81.87 
+lr: 0.001000
+===========Epoch 11 's train==========
+iter:  0 loss: 0.062448 disagreement: -0.999979
+iter:  100 loss: -0.039046 disagreement: -0.999987
+iter:  200 loss: 0.060241 disagreement: -0.999985
+iter:  300 loss: 0.024592 disagreement: -0.999982
+iter:  400 loss: -0.082210 disagreement: -0.999987
+iter:  500 loss: -0.015533 disagreement: -0.999985
+iter:  600 loss: -0.026739 disagreement: -0.999984
+iter:  700 loss: 0.013023 disagreement: -0.999987
+iter:  800 loss: 0.010000 disagreement: -0.999983
+iter:  900 loss: -0.088634 disagreement: -0.999981
+iter:  1000 loss: -0.019321 disagreement: -0.999986
+iter:  1100 loss: 0.013253 disagreement: -0.999983
+iter:  1200 loss: 0.019672 disagreement: -0.999989
+iter:  1300 loss: -0.045583 disagreement: -0.999977
+iter:  1400 loss: 0.064371 disagreement: -0.999975
+iter:  1500 loss: 0.081240 disagreement: -0.999987
+iter:  1600 loss: -0.066008 disagreement: -0.999986
+iter:  1700 loss: 0.082837 disagreement: -0.999984
+iter:  1800 loss: -0.011658 disagreement: -0.999990
+iter:  1900 loss: 0.036258 disagreement: -0.999991
+iter:  2000 loss: 0.113375 disagreement: -0.999970
+iter:  2100 loss: 0.042992 disagreement: -0.999450
+iter:  2200 loss: -0.051390 disagreement: -0.999984
+iter:  2300 loss: 0.005273 disagreement: -0.999984
+iter:  2400 loss: 0.028049 disagreement: -0.999988
+iter:  2500 loss: -0.002287 disagreement: -0.999989
+iter:  2600 loss: -0.033921 disagreement: -0.999984
+iter:  2700 loss: 0.014775 disagreement: -0.999983
+iter:  2800 loss: 0.043644 disagreement: -0.999984
+iter:  2900 loss: 0.060859 disagreement: -0.999989
+iter:  3000 loss: -0.040799 disagreement: -0.999987
+iter:  3100 loss: 0.059982 disagreement: -0.999975
+iter:  3200 loss: 0.131844 disagreement: -0.999974
+	train_loss: 0.12
+===========Epoch 11 's test==========
+epoch 11, time: 1827.27
+	eval score: 81.90 
+	current best eval score: 81.90 
+decreased lr: 0.0005
+===========Epoch 12 's train==========
+iter:  0 loss: 0.152253 disagreement: -0.999989
+iter:  100 loss: -0.018309 disagreement: -0.999991
+iter:  200 loss: -0.073203 disagreement: -0.999992
+iter:  300 loss: 0.022454 disagreement: -0.999992
+iter:  400 loss: 0.008646 disagreement: -0.999992
+iter:  500 loss: 0.011170 disagreement: -0.999992
+iter:  600 loss: -0.085155 disagreement: -0.999993
+iter:  700 loss: -0.045971 disagreement: -0.999990
+iter:  800 loss: -0.057998 disagreement: -0.999991
+iter:  900 loss: -0.012323 disagreement: -0.999990
+iter:  1000 loss: -0.083338 disagreement: -0.999988
+iter:  1100 loss: 0.000372 disagreement: -0.999992
+iter:  1200 loss: -0.007167 disagreement: -0.999992
+iter:  1300 loss: 0.165880 disagreement: -0.999991
+iter:  1400 loss: 0.006435 disagreement: -0.999992
+iter:  1500 loss: -0.015612 disagreement: -0.999992
+iter:  1600 loss: 0.078909 disagreement: -0.999991
+iter:  1700 loss: 0.006048 disagreement: -0.999992
+iter:  1800 loss: -0.040903 disagreement: -0.999992
+iter:  1900 loss: 0.002838 disagreement: -0.999990
+iter:  2000 loss: 0.081592 disagreement: -0.999990
+iter:  2100 loss: -0.074115 disagreement: -0.999990
+iter:  2200 loss: -0.058270 disagreement: -0.999991
+iter:  2300 loss: -0.016922 disagreement: -0.999993
+iter:  2400 loss: 0.088737 disagreement: -0.999991
+iter:  2500 loss: -0.047583 disagreement: -0.999990
+iter:  2600 loss: 0.052004 disagreement: -0.999976
+iter:  2700 loss: -0.097239 disagreement: -0.999989
+iter:  2800 loss: 0.055183 disagreement: -0.999946
+iter:  2900 loss: 0.017442 disagreement: -0.999991
+iter:  3000 loss: -0.043544 disagreement: -0.999991
+iter:  3100 loss: 0.072697 disagreement: -0.999993
+iter:  3200 loss: -0.041847 disagreement: -0.999992
+	train_loss: 0.06
+===========Epoch 12 's test==========
+epoch 12, time: 1821.30
+	eval score: 82.14 
+	current best eval score: 82.14 
+lr: 0.000500
+===========Epoch 13 's train==========
+iter:  0 loss: -0.025223 disagreement: -0.999990
+iter:  100 loss: 0.090990 disagreement: -0.999992
+iter:  200 loss: -0.065220 disagreement: -0.999991
+iter:  300 loss: 0.009600 disagreement: -0.999991
+iter:  400 loss: -0.078816 disagreement: -0.999988
+iter:  500 loss: 0.106710 disagreement: -0.999992
+iter:  600 loss: 0.085387 disagreement: -0.999989
+iter:  700 loss: -0.045596 disagreement: -0.999990
+iter:  800 loss: 0.030937 disagreement: -0.999991
+iter:  900 loss: -0.029997 disagreement: -0.999992
+iter:  1000 loss: 0.057897 disagreement: -0.999992
+iter:  1100 loss: -0.016331 disagreement: -0.999992
+iter:  1200 loss: 0.033359 disagreement: -0.999993
+iter:  1300 loss: -0.080478 disagreement: -0.999989
+iter:  1400 loss: 0.250066 disagreement: -0.999991
+iter:  1500 loss: 0.035225 disagreement: -0.999991
+iter:  1600 loss: -0.022372 disagreement: -0.999993
+iter:  1700 loss: 0.022021 disagreement: -0.999991
+iter:  1800 loss: 0.009345 disagreement: -0.999993
+iter:  1900 loss: -0.078463 disagreement: -0.999989
+iter:  2000 loss: -0.091308 disagreement: -0.999993
+iter:  2100 loss: -0.077635 disagreement: -0.999991
+iter:  2200 loss: -0.074380 disagreement: -0.999992
+iter:  2300 loss: -0.099998 disagreement: -0.999985
+iter:  2400 loss: -0.075041 disagreement: -0.999993
+iter:  2500 loss: -0.017417 disagreement: -0.999993
+iter:  2600 loss: -0.055066 disagreement: -0.999989
+iter:  2700 loss: -0.057024 disagreement: -0.999982
+iter:  2800 loss: 0.043537 disagreement: -0.999993
+iter:  2900 loss: 0.232327 disagreement: -0.999988
+iter:  3000 loss: 0.136574 disagreement: -0.999992
+iter:  3100 loss: 0.024958 disagreement: -0.999993
+iter:  3200 loss: -0.013861 disagreement: -0.999992
+	train_loss: 0.04
+===========Epoch 13 's test==========
+epoch 13, time: 1856.87
+	eval score: 82.17 
+	current best eval score: 82.17 
+decreased lr: 0.0003
+===========Epoch 14 's train==========
+iter:  0 loss: 0.123426 disagreement: -0.999989
+iter:  100 loss: 0.221702 disagreement: -0.999993
+iter:  200 loss: 0.015989 disagreement: -0.999994
+iter:  300 loss: 0.004100 disagreement: -0.999994
+iter:  400 loss: -0.080047 disagreement: -0.999994
+iter:  500 loss: -0.067329 disagreement: -0.999994
+iter:  600 loss: 0.069890 disagreement: -0.999994
+iter:  700 loss: -0.068583 disagreement: -0.999993
+iter:  800 loss: 0.233884 disagreement: -0.999993
+iter:  900 loss: 0.253632 disagreement: -0.999993
+iter:  1000 loss: 0.132292 disagreement: -0.999992
+iter:  1100 loss: 0.279311 disagreement: -0.999992
+iter:  1200 loss: 0.094852 disagreement: -0.999993
+iter:  1300 loss: -0.013225 disagreement: -0.999993
+iter:  1400 loss: -0.013613 disagreement: -0.999994
+iter:  1500 loss: -0.073496 disagreement: -0.999994
+iter:  1600 loss: -0.052663 disagreement: -0.999994
+iter:  1700 loss: -0.040797 disagreement: -0.999994
+iter:  1800 loss: 0.111096 disagreement: -0.999993
+iter:  1900 loss: 0.014227 disagreement: -0.999993
+iter:  2000 loss: -0.044634 disagreement: -0.999994
+iter:  2100 loss: 0.077025 disagreement: -0.999993
+iter:  2200 loss: 0.028328 disagreement: -0.999993
+iter:  2300 loss: -0.026788 disagreement: -0.999994
+iter:  2400 loss: -0.047182 disagreement: -0.999993
+iter:  2500 loss: -0.035746 disagreement: -0.999993
+iter:  2600 loss: -0.030117 disagreement: -0.999994
+iter:  2700 loss: -0.055845 disagreement: -0.999994
+iter:  2800 loss: -0.036375 disagreement: -0.999994
+iter:  2900 loss: -0.023079 disagreement: -0.999992
+iter:  3000 loss: -0.045046 disagreement: -0.999993
+iter:  3100 loss: 0.052032 disagreement: -0.999993
+iter:  3200 loss: 0.133014 disagreement: -0.999993
+	train_loss: -0.00
+===========Epoch 14 's test==========
+epoch 14, time: 1817.95
+	eval score: 82.30 
+	current best eval score: 82.30 
+lr: 0.000250
+===========Epoch 15 's train==========
+iter:  0 loss: 0.000355 disagreement: -0.999993
+iter:  100 loss: 0.195865 disagreement: -0.999994
+iter:  200 loss: -0.022241 disagreement: -0.999994
+iter:  300 loss: 0.028922 disagreement: -0.999993
+iter:  400 loss: -0.018979 disagreement: -0.999992
+iter:  500 loss: -0.087806 disagreement: -0.999993
+iter:  600 loss: -0.035716 disagreement: -0.999994
+iter:  700 loss: -0.047898 disagreement: -0.999994
+iter:  800 loss: -0.080987 disagreement: -0.999994
+iter:  900 loss: -0.019992 disagreement: -0.999994
+iter:  1000 loss: -0.018628 disagreement: -0.999993
+iter:  1100 loss: 0.046272 disagreement: -0.999994
+iter:  1200 loss: -0.033588 disagreement: -0.999994
+iter:  1300 loss: 0.084199 disagreement: -0.999994
+iter:  1400 loss: 0.042470 disagreement: -0.999993
+iter:  1500 loss: -0.087321 disagreement: -0.999994
+iter:  1600 loss: -0.046564 disagreement: -0.999994
+iter:  1700 loss: -0.014296 disagreement: -0.999993
+iter:  1800 loss: -0.083095 disagreement: -0.999994
+iter:  1900 loss: -0.072268 disagreement: -0.999994
+iter:  2000 loss: 0.075903 disagreement: -0.999992
+iter:  2100 loss: -0.007121 disagreement: -0.999993
+iter:  2200 loss: -0.080643 disagreement: -0.999994
+iter:  2300 loss: 0.087655 disagreement: -0.999993
+iter:  2400 loss: 0.155205 disagreement: -0.999994
+iter:  2500 loss: -0.077966 disagreement: -0.999993
+iter:  2600 loss: -0.027024 disagreement: -0.999993
+iter:  2700 loss: -0.047884 disagreement: -0.999993
+iter:  2800 loss: -0.025876 disagreement: -0.999994
+iter:  2900 loss: 0.107032 disagreement: -0.999993
+iter:  3000 loss: 0.113995 disagreement: -0.999989
+iter:  3100 loss: -0.032341 disagreement: -0.999994
+iter:  3200 loss: 0.088161 disagreement: -0.999993
+	train_loss: -0.02
+===========Epoch 15 's test==========
+epoch 15, time: 1857.52
+	eval score: 82.12 
+	current best eval score: 82.30 
+decreased lr: 0.0001
+===========Epoch 16 's train==========
+iter:  0 loss: 0.109412 disagreement: -0.999993
+iter:  100 loss: 0.107995 disagreement: -0.999994
+iter:  200 loss: -0.040489 disagreement: -0.999994
+iter:  300 loss: -0.036751 disagreement: -0.999994
+iter:  400 loss: -0.006191 disagreement: -0.999994
+iter:  500 loss: -0.067937 disagreement: -0.999994
+iter:  600 loss: 0.080143 disagreement: -0.999994
+iter:  700 loss: 0.028116 disagreement: -0.999994
+iter:  800 loss: 0.001298 disagreement: -0.999994
+iter:  900 loss: -0.027289 disagreement: -0.999994
+iter:  1000 loss: -0.074849 disagreement: -0.999994
+iter:  1100 loss: 0.055002 disagreement: -0.999994
+iter:  1200 loss: 0.069942 disagreement: -0.999994
+iter:  1300 loss: -0.020932 disagreement: -0.999994
+iter:  1400 loss: 0.233217 disagreement: -0.999994
+iter:  1500 loss: 0.045136 disagreement: -0.999993
+iter:  1600 loss: 0.000368 disagreement: -0.999994
+iter:  1700 loss: 0.003736 disagreement: -0.999994
+iter:  1800 loss: 0.019318 disagreement: -0.999994
+iter:  1900 loss: -0.035877 disagreement: -0.999994
+iter:  2000 loss: 0.312426 disagreement: -0.999994
+iter:  2100 loss: 0.044020 disagreement: -0.999994
+iter:  2200 loss: -0.001671 disagreement: -0.999994
+iter:  2300 loss: 0.019488 disagreement: -0.999994
+iter:  2400 loss: -0.059451 disagreement: -0.999994
+iter:  2500 loss: 0.056095 disagreement: -0.999994
+iter:  2600 loss: -0.056864 disagreement: -0.999994
+iter:  2700 loss: -0.004637 disagreement: -0.999994
+iter:  2800 loss: 0.142696 disagreement: -0.999994
+iter:  2900 loss: -0.015205 disagreement: -0.999994
+iter:  3000 loss: -0.092914 disagreement: -0.999994
+iter:  3100 loss: -0.033635 disagreement: -0.999994
+iter:  3200 loss: 0.074514 disagreement: -0.999994
+	train_loss: -0.04
+===========Epoch 16 's test==========
+epoch 16, time: 1827.14
+	eval score: 82.40 
+	current best eval score: 82.40 
+lr: 0.000125
+===========Epoch 17 's train==========
+iter:  0 loss: 0.097642 disagreement: -0.999994
+iter:  100 loss: -0.018288 disagreement: -0.999994
+iter:  200 loss: 0.054496 disagreement: -0.999994
+iter:  300 loss: 0.168576 disagreement: -0.999994
+iter:  400 loss: -0.048327 disagreement: -0.999994
+iter:  500 loss: -0.072735 disagreement: -0.999994
+iter:  600 loss: -0.025938 disagreement: -0.999994
+iter:  700 loss: -0.034596 disagreement: -0.999994
+iter:  800 loss: 0.239970 disagreement: -0.999994
+iter:  900 loss: 0.028081 disagreement: -0.999994
+iter:  1000 loss: -0.061557 disagreement: -0.999994
+iter:  1100 loss: -0.008742 disagreement: -0.999994
+iter:  1200 loss: 0.107633 disagreement: -0.999994
+iter:  1300 loss: 0.086713 disagreement: -0.999993
+iter:  1400 loss: 0.076716 disagreement: -0.999993
+iter:  1500 loss: 0.000178 disagreement: -0.999994
+iter:  1600 loss: -0.025433 disagreement: -0.999993
+iter:  1700 loss: 0.042522 disagreement: -0.999994
+iter:  1800 loss: -0.053177 disagreement: -0.999994
+iter:  1900 loss: -0.076069 disagreement: -0.999994
+iter:  2000 loss: -0.056555 disagreement: -0.999994
+iter:  2100 loss: 0.000438 disagreement: -0.999994
+iter:  2200 loss: -0.085320 disagreement: -0.999994
+iter:  2300 loss: 0.004495 disagreement: -0.999994
+iter:  2400 loss: 0.074149 disagreement: -0.999994
+iter:  2500 loss: -0.034381 disagreement: -0.999994
+iter:  2600 loss: 0.010894 disagreement: -0.999994
+iter:  2700 loss: -0.088066 disagreement: -0.999994
+iter:  2800 loss: 0.061952 disagreement: -0.999994
+iter:  2900 loss: -0.019414 disagreement: -0.999994
+iter:  3000 loss: -0.044845 disagreement: -0.999994
+iter:  3100 loss: -0.013210 disagreement: -0.999994
+iter:  3200 loss: 0.013830 disagreement: -0.999994
+	train_loss: -0.04
+===========Epoch 17 's test==========
+epoch 17, time: 1807.81
+	eval score: 82.33 
+	current best eval score: 82.40 
+decreased lr: 0.0001
+===========Epoch 18 's train==========
+iter:  0 loss: -0.065496 disagreement: -0.999994
+iter:  100 loss: -0.086707 disagreement: -0.999994
+iter:  200 loss: 0.013683 disagreement: -0.999994
+iter:  300 loss: 0.111734 disagreement: -0.999994
+iter:  400 loss: 0.029784 disagreement: -0.999994
+iter:  500 loss: -0.080024 disagreement: -0.999994
+iter:  600 loss: 0.015534 disagreement: -0.999994
+iter:  700 loss: 0.006598 disagreement: -0.999994
+iter:  800 loss: -0.041382 disagreement: -0.999994
+iter:  900 loss: -0.014140 disagreement: -0.999994
+iter:  1000 loss: 0.186972 disagreement: -0.999994
+iter:  1100 loss: -0.048551 disagreement: -0.999994
+iter:  1200 loss: -0.083752 disagreement: -0.999994
+iter:  1300 loss: 0.018474 disagreement: -0.999994
+iter:  1400 loss: 0.062747 disagreement: -0.999994
+iter:  1500 loss: -0.015592 disagreement: -0.999994
+iter:  1600 loss: -0.004751 disagreement: -0.999994
+iter:  1700 loss: -0.080260 disagreement: -0.999994
+iter:  1800 loss: -0.022382 disagreement: -0.999994
+iter:  1900 loss: -0.014080 disagreement: -0.999994
+iter:  2000 loss: -0.018964 disagreement: -0.999994
+iter:  2100 loss: 0.019853 disagreement: -0.999994
+iter:  2200 loss: -0.046748 disagreement: -0.999994
+iter:  2300 loss: -0.056349 disagreement: -0.999994
+iter:  2400 loss: -0.000729 disagreement: -0.999994
+iter:  2500 loss: 0.015119 disagreement: -0.999994
+iter:  2600 loss: -0.041922 disagreement: -0.999994
+iter:  2700 loss: 0.143513 disagreement: -0.999994
+iter:  2800 loss: 0.043584 disagreement: -0.999994
+iter:  2900 loss: 0.051704 disagreement: -0.999994
+iter:  3000 loss: 0.030487 disagreement: -0.999994
+iter:  3100 loss: 0.103205 disagreement: -0.999994
+iter:  3200 loss: -0.097709 disagreement: -0.999994
+	train_loss: -0.05
+===========Epoch 18 's test==========
+epoch 18, time: 1878.75
+	eval score: 82.46 
+	current best eval score: 82.46 
+lr: 0.000063
+===========Epoch 19 's train==========
+iter:  0 loss: -0.058822 disagreement: -0.999994
+iter:  100 loss: 0.017678 disagreement: -0.999994
+iter:  200 loss: -0.025248 disagreement: -0.999994
+iter:  300 loss: -0.081789 disagreement: -0.999994
+iter:  400 loss: -0.022811 disagreement: -0.999994
+iter:  500 loss: -0.048424 disagreement: -0.999994
+iter:  600 loss: -0.078113 disagreement: -0.999994
+iter:  700 loss: -0.061019 disagreement: -0.999994
+iter:  800 loss: -0.083225 disagreement: -0.999994
+iter:  900 loss: 0.024098 disagreement: -0.999994
+iter:  1000 loss: -0.054001 disagreement: -0.999994
+iter:  1100 loss: -0.055075 disagreement: -0.999994
+iter:  1200 loss: -0.036483 disagreement: -0.999994
+iter:  1300 loss: 0.025145 disagreement: -0.999994
+iter:  1400 loss: -0.072900 disagreement: -0.999994
+iter:  1500 loss: -0.053905 disagreement: -0.999993
+iter:  1600 loss: 0.022347 disagreement: -0.999994
+iter:  1700 loss: -0.068975 disagreement: -0.999994
+iter:  1800 loss: -0.033484 disagreement: -0.999994
+iter:  1900 loss: 0.012029 disagreement: -0.999994
+iter:  2000 loss: -0.086878 disagreement: -0.999994
+iter:  2100 loss: -0.042795 disagreement: -0.999994
+iter:  2200 loss: 0.026735 disagreement: -0.999994
+iter:  2300 loss: 0.113119 disagreement: -0.999994
+iter:  2400 loss: 0.124582 disagreement: -0.999994
+iter:  2500 loss: -0.055148 disagreement: -0.999994
+iter:  2600 loss: 0.034427 disagreement: -0.999994
+iter:  2700 loss: -0.011038 disagreement: -0.999994
+iter:  2800 loss: -0.033363 disagreement: -0.999994
+iter:  2900 loss: -0.078944 disagreement: -0.999994
+iter:  3000 loss: 0.016436 disagreement: -0.999994
+iter:  3100 loss: -0.061548 disagreement: -0.999994
+iter:  3200 loss: -0.000821 disagreement: -0.999994
+	train_loss: -0.06
+===========Epoch 19 's test==========
+epoch 19, time: 1962.06
+	eval score: 82.51 
+	current best eval score: 82.51 
+decreased lr: 0.0000
+===========Epoch 20 's train==========
+iter:  0 loss: -0.049388 disagreement: -0.999994
+iter:  100 loss: -0.076133 disagreement: -0.999994
+iter:  200 loss: -0.074103 disagreement: -0.999994
+iter:  300 loss: 0.072764 disagreement: -0.999994
+iter:  400 loss: -0.029993 disagreement: -0.999994
+iter:  500 loss: -0.006235 disagreement: -0.999994
+iter:  600 loss: -0.068209 disagreement: -0.999994
+iter:  700 loss: -0.043318 disagreement: -0.999994
+iter:  800 loss: -0.053940 disagreement: -0.999994
+iter:  900 loss: -0.068668 disagreement: -0.999994
+iter:  1000 loss: 0.088428 disagreement: -0.999994
+iter:  1100 loss: -0.055061 disagreement: -0.999994
+iter:  1200 loss: 0.031457 disagreement: -0.999994
+iter:  1300 loss: -0.004721 disagreement: -0.999994
+iter:  1400 loss: -0.083551 disagreement: -0.999994
+iter:  1500 loss: 0.103746 disagreement: -0.999994
+iter:  1600 loss: -0.048603 disagreement: -0.999994
+iter:  1700 loss: 0.101907 disagreement: -0.999994
+iter:  1800 loss: -0.036933 disagreement: -0.999994
+iter:  1900 loss: -0.074858 disagreement: -0.999994
+iter:  2000 loss: -0.077483 disagreement: -0.999994
+iter:  2100 loss: 0.043837 disagreement: -0.999994
+iter:  2200 loss: -0.043846 disagreement: -0.999994
+iter:  2300 loss: -0.016401 disagreement: -0.999994
+iter:  2400 loss: -0.046389 disagreement: -0.999994
+iter:  2500 loss: 0.054368 disagreement: -0.999994
+iter:  2600 loss: 0.038653 disagreement: -0.999994
+iter:  2700 loss: -0.079499 disagreement: -0.999994
+iter:  2800 loss: -0.073575 disagreement: -0.999994
+iter:  2900 loss: -0.024932 disagreement: -0.999994
+iter:  3000 loss: -0.082056 disagreement: -0.999994
+iter:  3100 loss: 0.030768 disagreement: -0.999994
+iter:  3200 loss: -0.002900 disagreement: -0.999994
+	train_loss: -0.06
+===========Epoch 20 's test==========
+epoch 20, time: 1955.46
+	eval score: 82.62 
+	current best eval score: 82.62 
+lr: 0.000031
+===========Epoch 21 's train==========
+iter:  0 loss: 0.041737 disagreement: -0.999994
+iter:  100 loss: 0.026405 disagreement: -0.999994
+iter:  200 loss: -0.077045 disagreement: -0.999994
+iter:  300 loss: -0.024036 disagreement: -0.999994
+iter:  400 loss: -0.031704 disagreement: -0.999994
+iter:  500 loss: -0.073387 disagreement: -0.999994
+iter:  600 loss: -0.094490 disagreement: -0.999994
+iter:  700 loss: -0.065522 disagreement: -0.999994
+iter:  800 loss: -0.059107 disagreement: -0.999994
+iter:  900 loss: -0.030063 disagreement: -0.999994
+iter:  1000 loss: -0.052820 disagreement: -0.999994
+iter:  1100 loss: -0.074553 disagreement: -0.999994
+iter:  1200 loss: -0.096660 disagreement: -0.999994
+iter:  1300 loss: -0.072033 disagreement: -0.999994
+iter:  1400 loss: 0.057366 disagreement: -0.999994
+iter:  1500 loss: 0.033902 disagreement: -0.999994
+iter:  1600 loss: 0.005396 disagreement: -0.999994
+iter:  1700 loss: -0.052275 disagreement: -0.999994
+iter:  1800 loss: -0.063762 disagreement: -0.999994
+iter:  1900 loss: -0.015824 disagreement: -0.999994
+iter:  2000 loss: -0.032936 disagreement: -0.999994
+iter:  2100 loss: -0.020874 disagreement: -0.999994
+iter:  2200 loss: -0.072887 disagreement: -0.999994
+iter:  2300 loss: -0.051357 disagreement: -0.999994
+iter:  2400 loss: -0.047822 disagreement: -0.999994
+iter:  2500 loss: -0.030626 disagreement: -0.999994
+iter:  2600 loss: -0.052494 disagreement: -0.999994
+iter:  2700 loss: -0.007552 disagreement: -0.999994
+iter:  2800 loss: -0.053655 disagreement: -0.999994
+iter:  2900 loss: -0.074004 disagreement: -0.999994
+iter:  3000 loss: -0.062379 disagreement: -0.999994
+iter:  3100 loss: -0.045275 disagreement: -0.999994
+iter:  3200 loss: 0.083320 disagreement: -0.999994
+	train_loss: -0.07
+===========Epoch 21 's test==========
+epoch 21, time: 1949.65
+	eval score: 82.59 
+	current best eval score: 82.62 
+decreased lr: 0.0000
+===========Epoch 22 's train==========
+iter:  0 loss: 0.151302 disagreement: -0.999994
+iter:  100 loss: -0.029408 disagreement: -0.999994
+iter:  200 loss: 0.127759 disagreement: -0.999994
+iter:  300 loss: -0.080652 disagreement: -0.999994
+iter:  400 loss: -0.071071 disagreement: -0.999994
+iter:  500 loss: -0.047508 disagreement: -0.999994
+iter:  600 loss: 0.031658 disagreement: -0.999994
+iter:  700 loss: 0.058060 disagreement: -0.999994
+iter:  800 loss: -0.073489 disagreement: -0.999994
+iter:  900 loss: 0.034526 disagreement: -0.999994
+iter:  1000 loss: 0.050637 disagreement: -0.999994
+iter:  1100 loss: 0.055281 disagreement: -0.999994
+iter:  1200 loss: 0.020849 disagreement: -0.999994
+iter:  1300 loss: 0.101366 disagreement: -0.999994
+iter:  1400 loss: -0.037011 disagreement: -0.999994
+iter:  1500 loss: -0.043072 disagreement: -0.999994
+iter:  1600 loss: -0.023887 disagreement: -0.999994
+iter:  1700 loss: -0.042701 disagreement: -0.999994
+iter:  1800 loss: 0.142637 disagreement: -0.999994
+iter:  1900 loss: -0.076693 disagreement: -0.999994
+iter:  2000 loss: -0.071179 disagreement: -0.999994
+iter:  2100 loss: -0.033485 disagreement: -0.999994
+iter:  2200 loss: -0.073358 disagreement: -0.999994
+iter:  2300 loss: 0.017430 disagreement: -0.999994
+iter:  2400 loss: -0.040405 disagreement: -0.999994
+iter:  2500 loss: -0.055863 disagreement: -0.999994
+iter:  2600 loss: -0.012260 disagreement: -0.999994
+iter:  2700 loss: -0.075624 disagreement: -0.999994
+iter:  2800 loss: 0.018579 disagreement: -0.999994
+iter:  2900 loss: -0.067064 disagreement: -0.999994
+iter:  3000 loss: 0.038882 disagreement: -0.999994
+iter:  3100 loss: 0.002864 disagreement: -0.999994
+iter:  3200 loss: 0.010902 disagreement: -0.999994
+	train_loss: -0.06
+===========Epoch 22 's test==========
+epoch 22, time: 1975.67
+	eval score: 82.59 
+	current best eval score: 82.62 
+lr: 0.000016
+===========Epoch 23 's train==========
+iter:  0 loss: -0.035598 disagreement: -0.999994
+iter:  100 loss: -0.046824 disagreement: -0.999994
+iter:  200 loss: 0.038005 disagreement: -0.999994
+iter:  300 loss: -0.047313 disagreement: -0.999994
+iter:  400 loss: 0.123301 disagreement: -0.999994
+iter:  500 loss: -0.021269 disagreement: -0.999994
+iter:  600 loss: -0.094285 disagreement: -0.999994
+iter:  700 loss: -0.080458 disagreement: -0.999994
+iter:  800 loss: -0.042171 disagreement: -0.999994
+iter:  900 loss: -0.079670 disagreement: -0.999994
+iter:  1000 loss: 0.061061 disagreement: -0.999994
+iter:  1100 loss: 0.042773 disagreement: -0.999994
+iter:  1200 loss: -0.000421 disagreement: -0.999994
+iter:  1300 loss: -0.055323 disagreement: -0.999994
+iter:  1400 loss: 0.026528 disagreement: -0.999994
+iter:  1500 loss: 0.057579 disagreement: -0.999994
+iter:  1600 loss: 0.005473 disagreement: -0.999994
+iter:  1700 loss: 0.006352 disagreement: -0.999994
+iter:  1800 loss: 0.119673 disagreement: -0.999994
+iter:  1900 loss: -0.028519 disagreement: -0.999994
+iter:  2000 loss: -0.056031 disagreement: -0.999995
+iter:  2100 loss: -0.037249 disagreement: -0.999994
+iter:  2200 loss: -0.064389 disagreement: -0.999994
+iter:  2300 loss: 0.021281 disagreement: -0.999994
+iter:  2400 loss: -0.090111 disagreement: -0.999994
+iter:  2500 loss: 0.140920 disagreement: -0.999994
+iter:  2600 loss: -0.038225 disagreement: -0.999994
+iter:  2700 loss: 0.074981 disagreement: -0.999994
+iter:  2800 loss: -0.082578 disagreement: -0.999994
+iter:  2900 loss: -0.015525 disagreement: -0.999994
+iter:  3000 loss: 0.003961 disagreement: -0.999994
+iter:  3100 loss: 0.071147 disagreement: -0.999994
+iter:  3200 loss: 0.019695 disagreement: -0.999994
+	train_loss: -0.07
+===========Epoch 23 's test==========
+epoch 23, time: 1996.41
+	eval score: 82.51 
+	current best eval score: 82.62 
+decreased lr: 0.0000
+===========Epoch 24 's train==========
+iter:  0 loss: 0.198272 disagreement: -0.999994
+iter:  100 loss: 0.009001 disagreement: -0.999994
+iter:  200 loss: 0.010709 disagreement: -0.999994
+iter:  300 loss: -0.058460 disagreement: -0.999994
+iter:  400 loss: 0.003081 disagreement: -0.999994
+iter:  500 loss: -0.091052 disagreement: -0.999994
+iter:  600 loss: -0.095785 disagreement: -0.999994
+iter:  700 loss: -0.086320 disagreement: -0.999994
+iter:  800 loss: 0.051914 disagreement: -0.999994
+iter:  900 loss: -0.043352 disagreement: -0.999994
+iter:  1000 loss: -0.057279 disagreement: -0.999994
+iter:  1100 loss: -0.070535 disagreement: -0.999994
+iter:  1200 loss: 0.064658 disagreement: -0.999994
+iter:  1300 loss: 0.002299 disagreement: -0.999994
+iter:  1400 loss: -0.038895 disagreement: -0.999994
+iter:  1500 loss: -0.016414 disagreement: -0.999994
+iter:  1600 loss: -0.016652 disagreement: -0.999994
+iter:  1700 loss: 0.047404 disagreement: -0.999994
+iter:  1800 loss: -0.042850 disagreement: -0.999994
+iter:  1900 loss: -0.067028 disagreement: -0.999994
+iter:  2000 loss: 0.149089 disagreement: -0.999994
+iter:  2100 loss: 0.043818 disagreement: -0.999994
+iter:  2200 loss: -0.057758 disagreement: -0.999994
+iter:  2300 loss: -0.032096 disagreement: -0.999994
+iter:  2400 loss: -0.092996 disagreement: -0.999994
+iter:  2500 loss: -0.074231 disagreement: -0.999994
+iter:  2600 loss: 0.070541 disagreement: -0.999995
+iter:  2700 loss: 0.032735 disagreement: -0.999994
+iter:  2800 loss: 0.016209 disagreement: -0.999993
+iter:  2900 loss: 0.022176 disagreement: -0.999994
+iter:  3000 loss: -0.023773 disagreement: -0.999994
+iter:  3100 loss: 0.073091 disagreement: -0.999994
+iter:  3200 loss: -0.003483 disagreement: -0.999994
+	train_loss: -0.07
+===========Epoch 24 's test==========
+epoch 24, time: 1973.99
+	eval score: 82.54 
+	current best eval score: 82.62 
+lr: 0.000008
+===========Epoch 25 's train==========
+iter:  0 loss: -0.023883 disagreement: -0.999994
+iter:  100 loss: -0.014568 disagreement: -0.999994
+iter:  200 loss: 0.011593 disagreement: -0.999994
+iter:  300 loss: -0.067726 disagreement: -0.999994
+iter:  400 loss: -0.073436 disagreement: -0.999994
+iter:  500 loss: -0.011220 disagreement: -0.999995
+iter:  600 loss: -0.082273 disagreement: -0.999994
+iter:  700 loss: -0.084137 disagreement: -0.999994
+iter:  800 loss: -0.076675 disagreement: -0.999994
+iter:  900 loss: -0.024096 disagreement: -0.999995
+iter:  1000 loss: -0.025116 disagreement: -0.999994
+iter:  1100 loss: -0.043482 disagreement: -0.999994
+iter:  1200 loss: -0.088106 disagreement: -0.999994
+iter:  1300 loss: 0.163586 disagreement: -0.999994
+iter:  1400 loss: -0.011566 disagreement: -0.999994
+iter:  1500 loss: -0.021674 disagreement: -0.999994
+iter:  1600 loss: -0.018063 disagreement: -0.999994
+iter:  1700 loss: -0.063513 disagreement: -0.999994
+iter:  1800 loss: 0.008977 disagreement: -0.999994
+iter:  1900 loss: -0.043118 disagreement: -0.999994
+iter:  2000 loss: -0.073403 disagreement: -0.999994
+iter:  2100 loss: -0.026619 disagreement: -0.999994
+iter:  2200 loss: 0.133073 disagreement: -0.999994
+iter:  2300 loss: -0.023090 disagreement: -0.999994
+iter:  2400 loss: 0.025870 disagreement: -0.999994
+iter:  2500 loss: -0.007526 disagreement: -0.999994
+iter:  2600 loss: -0.043815 disagreement: -0.999994
+iter:  2700 loss: -0.059216 disagreement: -0.999994
+iter:  2800 loss: 0.100333 disagreement: -0.999994
+iter:  2900 loss: -0.083565 disagreement: -0.999994
+iter:  3000 loss: -0.028995 disagreement: -0.999994
+iter:  3100 loss: -0.043215 disagreement: -0.999994
+iter:  3200 loss: -0.096761 disagreement: -0.999994
+	train_loss: -0.07
+===========Epoch 25 's test==========
+epoch 25, time: 1977.01
+	eval score: 82.59 
+	current best eval score: 82.62 
+decreased lr: 0.0000
+===========Epoch 26 's train==========
+iter:  0 loss: -0.012439 disagreement: -0.999994
+iter:  100 loss: -0.058605 disagreement: -0.999994
+iter:  200 loss: -0.041478 disagreement: -0.999994
+iter:  300 loss: 0.196976 disagreement: -0.999991
+iter:  400 loss: -0.007648 disagreement: -0.999994
+iter:  500 loss: 0.123503 disagreement: -0.999994
+iter:  600 loss: -0.031219 disagreement: -0.999994
+iter:  700 loss: -0.059893 disagreement: -0.999994
+iter:  800 loss: 0.117305 disagreement: -0.999994
+iter:  900 loss: 0.062755 disagreement: -0.999995
+iter:  1000 loss: -0.019341 disagreement: -0.999994
+iter:  1100 loss: -0.041456 disagreement: -0.999994
+iter:  1200 loss: 0.019798 disagreement: -0.999994
+iter:  1300 loss: -0.049398 disagreement: -0.999994
+iter:  1400 loss: 0.291971 disagreement: -0.999994
+iter:  1500 loss: -0.027990 disagreement: -0.999994
+iter:  1600 loss: -0.088796 disagreement: -0.999994
+iter:  1700 loss: -0.048339 disagreement: -0.999994
+iter:  1800 loss: -0.006203 disagreement: -0.999994
+iter:  1900 loss: -0.065782 disagreement: -0.999994
+iter:  2000 loss: -0.057994 disagreement: -0.999994
+iter:  2100 loss: -0.053159 disagreement: -0.999994
+iter:  2200 loss: -0.069715 disagreement: -0.999994
+iter:  2300 loss: -0.061552 disagreement: -0.999994
+iter:  2400 loss: -0.082649 disagreement: -0.999994
+iter:  2500 loss: -0.004937 disagreement: -0.999994
+iter:  2600 loss: -0.060404 disagreement: -0.999994
+iter:  2700 loss: -0.043562 disagreement: -0.999994
+iter:  2800 loss: -0.036939 disagreement: -0.999994
+iter:  2900 loss: -0.026627 disagreement: -0.999994
+iter:  3000 loss: -0.098244 disagreement: -0.999994
+iter:  3100 loss: -0.092731 disagreement: -0.999994
+iter:  3200 loss: -0.049174 disagreement: -0.999994
+	train_loss: -0.07
+===========Epoch 26 's test==========
+epoch 26, time: 1949.69
+	eval score: 82.61 
+	current best eval score: 82.62 
+lr: 0.000004
+===========Epoch 27 's train==========
+iter:  0 loss: -0.046406 disagreement: -0.999994
+iter:  100 loss: -0.058654 disagreement: -0.999994
+iter:  200 loss: -0.095199 disagreement: -0.999994
+iter:  300 loss: -0.099769 disagreement: -0.999994
+iter:  400 loss: -0.049104 disagreement: -0.999994
+iter:  500 loss: -0.010527 disagreement: -0.999994
+iter:  600 loss: -0.030869 disagreement: -0.999994
+iter:  700 loss: 0.020567 disagreement: -0.999994
+iter:  800 loss: 0.037103 disagreement: -0.999994
+iter:  900 loss: -0.042904 disagreement: -0.999994
+iter:  1000 loss: -0.095275 disagreement: -0.999994
+iter:  1100 loss: -0.040901 disagreement: -0.999994
+iter:  1200 loss: 0.075188 disagreement: -0.999994
+iter:  1300 loss: -0.087800 disagreement: -0.999994
+iter:  1400 loss: 0.017405 disagreement: -0.999994
+iter:  1500 loss: -0.016372 disagreement: -0.999995
+iter:  1600 loss: 0.004262 disagreement: -0.999994
+iter:  1700 loss: -0.019190 disagreement: -0.999994
+iter:  1800 loss: -0.062438 disagreement: -0.999994
+iter:  1900 loss: -0.028631 disagreement: -0.999994
+iter:  2000 loss: -0.038270 disagreement: -0.999994
+iter:  2100 loss: 0.049884 disagreement: -0.999994
+iter:  2200 loss: -0.000146 disagreement: -0.999994
+iter:  2300 loss: -0.099999 disagreement: -0.999994
+iter:  2400 loss: -0.067039 disagreement: -0.999994
+iter:  2500 loss: 0.194149 disagreement: -0.999994
+iter:  2600 loss: 0.014871 disagreement: -0.999994
+iter:  2700 loss: -0.070296 disagreement: -0.999994
+iter:  2800 loss: -0.020487 disagreement: -0.999994
+iter:  2900 loss: -0.016395 disagreement: -0.999994
+iter:  3000 loss: 0.010830 disagreement: -0.999994
+iter:  3100 loss: -0.038579 disagreement: -0.999994
+iter:  3200 loss: 0.006041 disagreement: -0.999994
+	train_loss: -0.07
+===========Epoch 27 's test==========
+epoch 27, time: 1961.81
+	eval score: 82.59 
+	current best eval score: 82.62 
+decreased lr: 0.0000
+===========Epoch 28 's train==========
+iter:  0 loss: -0.059427 disagreement: -0.999994
+iter:  100 loss: 0.010446 disagreement: -0.999994
+iter:  200 loss: 0.024024 disagreement: -0.999994
+iter:  300 loss: -0.000079 disagreement: -0.999994
+iter:  400 loss: -0.026401 disagreement: -0.999994
+iter:  500 loss: -0.076929 disagreement: -0.999994
+iter:  600 loss: -0.040848 disagreement: -0.999994
+iter:  700 loss: -0.093042 disagreement: -0.999994
+iter:  800 loss: 0.017787 disagreement: -0.999994
+iter:  900 loss: -0.022080 disagreement: -0.999994
+iter:  1000 loss: 0.156686 disagreement: -0.999994
+iter:  1100 loss: 0.105752 disagreement: -0.999994
+iter:  1200 loss: -0.032510 disagreement: -0.999994
+iter:  1300 loss: 0.002081 disagreement: -0.999994
+iter:  1400 loss: -0.011102 disagreement: -0.999994
+iter:  1500 loss: -0.016196 disagreement: -0.999994
+iter:  1600 loss: -0.065107 disagreement: -0.999994
+iter:  1700 loss: -0.045629 disagreement: -0.999994
+iter:  1800 loss: -0.091329 disagreement: -0.999994
+iter:  1900 loss: -0.087071 disagreement: -0.999994
+iter:  2000 loss: 0.106980 disagreement: -0.999994
+iter:  2100 loss: 0.038913 disagreement: -0.999994
+iter:  2200 loss: -0.071386 disagreement: -0.999994
+iter:  2300 loss: 0.095907 disagreement: -0.999994
+iter:  2400 loss: -0.033679 disagreement: -0.999994
+iter:  2500 loss: -0.025700 disagreement: -0.999994
+iter:  2600 loss: 0.051720 disagreement: -0.999994
+iter:  2700 loss: -0.096621 disagreement: -0.999994
+iter:  2800 loss: -0.076006 disagreement: -0.999994
+iter:  2900 loss: -0.074788 disagreement: -0.999994
+iter:  3000 loss: -0.037068 disagreement: -0.999994
+iter:  3100 loss: 0.083888 disagreement: -0.999994
+iter:  3200 loss: -0.045567 disagreement: -0.999994
+	train_loss: -0.07
+===========Epoch 28 's test==========
+epoch 28, time: 1453.19
+	eval score: 82.56 
+	current best eval score: 82.62 
+lr: 0.000002
+===========Epoch 29 's train==========
+iter:  0 loss: -0.050147 disagreement: -0.999994
+iter:  100 loss: -0.091235 disagreement: -0.999994
+iter:  200 loss: -0.040099 disagreement: -0.999994
+iter:  300 loss: -0.015286 disagreement: -0.999994
+iter:  400 loss: -0.000622 disagreement: -0.999994
+iter:  500 loss: 0.058246 disagreement: -0.999994
+iter:  600 loss: 0.020139 disagreement: -0.999994
+iter:  700 loss: 0.031752 disagreement: -0.999994
+iter:  800 loss: -0.047235 disagreement: -0.999994
+iter:  900 loss: -0.065141 disagreement: -0.999994
+iter:  1000 loss: -0.077542 disagreement: -0.999994
+iter:  1100 loss: -0.065043 disagreement: -0.999994
+iter:  1200 loss: -0.038282 disagreement: -0.999994
+iter:  1300 loss: -0.067630 disagreement: -0.999994
+iter:  1400 loss: 0.027039 disagreement: -0.999994
+iter:  1500 loss: -0.062109 disagreement: -0.999994
+iter:  1600 loss: -0.061895 disagreement: -0.999994
+iter:  1700 loss: -0.082631 disagreement: -0.999995
+iter:  1800 loss: -0.027987 disagreement: -0.999994
+iter:  1900 loss: -0.017277 disagreement: -0.999994
+iter:  2000 loss: -0.064931 disagreement: -0.999994
+iter:  2100 loss: -0.025363 disagreement: -0.999994
+iter:  2200 loss: -0.061759 disagreement: -0.999995
+iter:  2300 loss: -0.039495 disagreement: -0.999994
+iter:  2400 loss: -0.069870 disagreement: -0.999994
+iter:  2500 loss: -0.047888 disagreement: -0.999994
+iter:  2600 loss: -0.091553 disagreement: -0.999994
+iter:  2700 loss: -0.088608 disagreement: -0.999994
+iter:  2800 loss: -0.042921 disagreement: -0.999994
+iter:  2900 loss: -0.047022 disagreement: -0.999994
+iter:  3000 loss: 0.003512 disagreement: -0.999995
+iter:  3100 loss: 0.004998 disagreement: -0.999994
+iter:  3200 loss: -0.059329 disagreement: -0.999994
+	train_loss: -0.07
+===========Epoch 29 's test==========
+epoch 29, time: 1344.89
+	eval score: 82.59 
+	current best eval score: 82.62 
+lr: 0.000002
+===========Epoch 30 's train==========
+iter:  0 loss: 0.178431 disagreement: -0.999994
+iter:  100 loss: -0.011720 disagreement: -0.999994
+iter:  200 loss: -0.038221 disagreement: -0.999994
+iter:  300 loss: -0.053119 disagreement: -0.999995
+iter:  400 loss: 0.009794 disagreement: -0.999994
+iter:  500 loss: -0.005416 disagreement: -0.999994
+iter:  600 loss: -0.019000 disagreement: -0.999994
+iter:  700 loss: 0.030233 disagreement: -0.999994
+iter:  800 loss: -0.049264 disagreement: -0.999995
+iter:  900 loss: 0.024456 disagreement: -0.999995
+iter:  1000 loss: -0.033106 disagreement: -0.999994
+iter:  1100 loss: -0.088153 disagreement: -0.999994
+iter:  1200 loss: -0.036121 disagreement: -0.999995
+iter:  1300 loss: -0.063906 disagreement: -0.999994
+iter:  1400 loss: -0.039293 disagreement: -0.999995
+iter:  1500 loss: -0.088311 disagreement: -0.999994
+iter:  1600 loss: -0.024021 disagreement: -0.999994
+iter:  1700 loss: -0.045286 disagreement: -0.999994
+iter:  1800 loss: -0.047679 disagreement: -0.999994
+iter:  1900 loss: 0.030402 disagreement: -0.999994
+iter:  2000 loss: -0.037596 disagreement: -0.999994
+iter:  2100 loss: 0.046239 disagreement: -0.999994
+iter:  2200 loss: -0.002726 disagreement: -0.999993
+iter:  2300 loss: -0.076798 disagreement: -0.999994
+iter:  2400 loss: -0.054305 disagreement: -0.999994
+iter:  2500 loss: -0.088487 disagreement: -0.999994
+iter:  2600 loss: 0.021876 disagreement: -0.999994
+iter:  2700 loss: -0.065782 disagreement: -0.999994
+iter:  2800 loss: -0.001532 disagreement: -0.999994
+iter:  2900 loss: -0.083839 disagreement: -0.999994
+iter:  3000 loss: -0.068902 disagreement: -0.999994
+iter:  3100 loss: -0.082222 disagreement: -0.999994
+iter:  3200 loss: 0.028917 disagreement: -0.999994
+	train_loss: -0.07
+===========Epoch 30 's test==========
+epoch 30, time: 1431.23
+	eval score: 82.57 
+	current best eval score: 82.62 
+lr: 0.000002
+===========Epoch 31 's train==========
+iter:  0 loss: -0.064041 disagreement: -0.999994
+iter:  100 loss: -0.017439 disagreement: -0.999994
+iter:  200 loss: -0.039513 disagreement: -0.999994
+iter:  300 loss: -0.058791 disagreement: -0.999994
+iter:  400 loss: -0.006060 disagreement: -0.999994
+iter:  500 loss: -0.048854 disagreement: -0.999994
+iter:  600 loss: -0.050183 disagreement: -0.999994
+iter:  700 loss: 0.010489 disagreement: -0.999994
+iter:  800 loss: 0.027518 disagreement: -0.999995
+iter:  900 loss: 0.225322 disagreement: -0.999994
+iter:  1000 loss: -0.054753 disagreement: -0.999994
+iter:  1100 loss: 0.006458 disagreement: -0.999994
+iter:  1200 loss: 0.051079 disagreement: -0.999994
+iter:  1300 loss: 0.086117 disagreement: -0.999994
+iter:  1400 loss: -0.020523 disagreement: -0.999994
+iter:  1500 loss: -0.015063 disagreement: -0.999993
+iter:  1600 loss: -0.045409 disagreement: -0.999994
+iter:  1700 loss: -0.049624 disagreement: -0.999994
+iter:  1800 loss: -0.052919 disagreement: -0.999994
+iter:  1900 loss: -0.062852 disagreement: -0.999994
+iter:  2000 loss: -0.055443 disagreement: -0.999995
+iter:  2100 loss: -0.025813 disagreement: -0.999994
+iter:  2200 loss: -0.068800 disagreement: -0.999994
+iter:  2300 loss: -0.009008 disagreement: -0.999994
+iter:  2400 loss: -0.078629 disagreement: -0.999994
+iter:  2500 loss: 0.005020 disagreement: -0.999994
+iter:  2600 loss: -0.017881 disagreement: -0.999994
+iter:  2700 loss: 0.035302 disagreement: -0.999994
+iter:  2800 loss: -0.046346 disagreement: -0.999994
+iter:  2900 loss: -0.004109 disagreement: -0.999995
+iter:  3000 loss: -0.031167 disagreement: -0.999994
+iter:  3100 loss: -0.072216 disagreement: -0.999994
+iter:  3200 loss: -0.055135 disagreement: -0.999994
+	train_loss: -0.07
+===========Epoch 31 's test==========
+epoch 31, time: 1308.21
+	eval score: 82.56 
+	current best eval score: 82.62 
+lr: 0.000002
+===========Epoch 32 's train==========
+iter:  0 loss: -0.035225 disagreement: -0.999994
+iter:  100 loss: -0.008738 disagreement: -0.999994
+iter:  200 loss: -0.084708 disagreement: -0.999994
+iter:  300 loss: -0.071009 disagreement: -0.999994
+iter:  400 loss: -0.012228 disagreement: -0.999994
+iter:  500 loss: -0.088785 disagreement: -0.999994
+iter:  600 loss: -0.070458 disagreement: -0.999994
+iter:  700 loss: -0.042650 disagreement: -0.999994
+iter:  800 loss: 0.062637 disagreement: -0.999994
+iter:  900 loss: -0.006393 disagreement: -0.999994
+iter:  1000 loss: -0.068829 disagreement: -0.999995
+iter:  1100 loss: 0.041042 disagreement: -0.999994
+iter:  1200 loss: -0.054757 disagreement: -0.999994
+iter:  1300 loss: -0.044324 disagreement: -0.999994
+iter:  1400 loss: 0.068693 disagreement: -0.999994
+iter:  1500 loss: -0.021196 disagreement: -0.999994
+iter:  1600 loss: -0.098029 disagreement: -0.999994
+iter:  1700 loss: -0.095383 disagreement: -0.999994
+iter:  1800 loss: -0.073309 disagreement: -0.999994
+iter:  1900 loss: -0.009791 disagreement: -0.999994
+iter:  2000 loss: -0.009953 disagreement: -0.999994
+iter:  2100 loss: -0.002859 disagreement: -0.999994
+iter:  2200 loss: -0.016580 disagreement: -0.999994
+iter:  2300 loss: 0.053171 disagreement: -0.999994
+iter:  2400 loss: 0.093116 disagreement: -0.999994
+iter:  2500 loss: -0.005498 disagreement: -0.999994
+iter:  2600 loss: -0.039129 disagreement: -0.999994
+iter:  2700 loss: -0.020204 disagreement: -0.999994
+iter:  2800 loss: -0.087814 disagreement: -0.999994
+iter:  2900 loss: 0.009776 disagreement: -0.999994
+iter:  3000 loss: 0.050174 disagreement: -0.999994
+iter:  3100 loss: -0.078689 disagreement: -0.999994
+iter:  3200 loss: -0.029791 disagreement: -0.999994
+	train_loss: -0.07
+===========Epoch 32 's test==========
+epoch 32, time: 1335.57
+	eval score: 82.56 
+	current best eval score: 82.62 
+lr: 0.000002
+===========Epoch 33 's train==========
+iter:  0 loss: 0.012649 disagreement: -0.999994
+iter:  100 loss: -0.043358 disagreement: -0.999994
+iter:  200 loss: -0.008210 disagreement: -0.999994
+iter:  300 loss: -0.077892 disagreement: -0.999994
+iter:  400 loss: -0.042603 disagreement: -0.999994
+iter:  500 loss: 0.093216 disagreement: -0.999994
+iter:  600 loss: -0.066978 disagreement: -0.999994
+iter:  700 loss: 0.002797 disagreement: -0.999994
+iter:  800 loss: -0.018488 disagreement: -0.999994
+iter:  900 loss: -0.096046 disagreement: -0.999994
+iter:  1000 loss: 0.188053 disagreement: -0.999994
+iter:  1100 loss: -0.053110 disagreement: -0.999994
+iter:  1200 loss: 0.044839 disagreement: -0.999994
+iter:  1300 loss: -0.089721 disagreement: -0.999994
+iter:  1400 loss: -0.083665 disagreement: -0.999994
+iter:  1500 loss: -0.021322 disagreement: -0.999994
+iter:  1600 loss: -0.073676 disagreement: -0.999995
+iter:  1700 loss: -0.050371 disagreement: -0.999993
+iter:  1800 loss: 0.018867 disagreement: -0.999994
+iter:  1900 loss: -0.034675 disagreement: -0.999994
+iter:  2000 loss: -0.029849 disagreement: -0.999994
+iter:  2100 loss: -0.082288 disagreement: -0.999994
+iter:  2200 loss: -0.033164 disagreement: -0.999994
+iter:  2300 loss: -0.055406 disagreement: -0.999994
+iter:  2400 loss: -0.041299 disagreement: -0.999994
+iter:  2500 loss: -0.018474 disagreement: -0.999994
+iter:  2600 loss: -0.021815 disagreement: -0.999994
+iter:  2700 loss: -0.049730 disagreement: -0.999994
+iter:  2800 loss: -0.032935 disagreement: -0.999994
+iter:  2900 loss: -0.000006 disagreement: -0.999994
+iter:  3000 loss: 0.042625 disagreement: -0.999994
+iter:  3100 loss: 0.056529 disagreement: -0.999994
+iter:  3200 loss: -0.026832 disagreement: -0.999994
+	train_loss: -0.07
+===========Epoch 33 's test==========
+epoch 33, time: 1419.63
+	eval score: 82.54 
+	current best eval score: 82.62 
+lr: 0.000002
+===========Epoch 34 's train==========
+iter:  0 loss: 0.002468 disagreement: -0.999994
+iter:  100 loss: -0.049978 disagreement: -0.999994
+iter:  200 loss: 0.019742 disagreement: -0.999994
+iter:  300 loss: -0.075406 disagreement: -0.999994
+iter:  400 loss: -0.025777 disagreement: -0.999994
+iter:  500 loss: -0.059226 disagreement: -0.999994
+iter:  600 loss: -0.060523 disagreement: -0.999994
+iter:  700 loss: -0.000120 disagreement: -0.999994
+iter:  800 loss: 0.090250 disagreement: -0.999994
+iter:  900 loss: -0.072480 disagreement: -0.999994
+iter:  1000 loss: 0.028698 disagreement: -0.999994
+iter:  1100 loss: -0.091204 disagreement: -0.999994
+iter:  1200 loss: -0.043856 disagreement: -0.999994
+iter:  1300 loss: 0.003492 disagreement: -0.999994
+iter:  1400 loss: 0.011596 disagreement: -0.999994
+iter:  1500 loss: 0.002578 disagreement: -0.999994
+iter:  1600 loss: 0.052567 disagreement: -0.999995
+iter:  1700 loss: 0.041190 disagreement: -0.999994
+iter:  1800 loss: -0.017874 disagreement: -0.999995
+iter:  1900 loss: -0.083613 disagreement: -0.999994
+iter:  2000 loss: -0.067180 disagreement: -0.999994
+iter:  2100 loss: -0.079473 disagreement: -0.999994
+iter:  2200 loss: -0.038685 disagreement: -0.999994
+iter:  2300 loss: -0.074631 disagreement: -0.999994
+iter:  2400 loss: -0.082594 disagreement: -0.999994
+iter:  2500 loss: 0.027760 disagreement: -0.999994
+iter:  2600 loss: 0.119266 disagreement: -0.999994
+iter:  2700 loss: -0.080068 disagreement: -0.999995
+iter:  2800 loss: -0.045102 disagreement: -0.999994
+iter:  2900 loss: -0.044740 disagreement: -0.999994
+iter:  3000 loss: -0.017701 disagreement: -0.999994
+iter:  3100 loss: -0.085299 disagreement: -0.999994
+iter:  3200 loss: -0.042761 disagreement: -0.999994
+	train_loss: -0.07
+===========Epoch 34 's test==========
+epoch 34, time: 1320.36
+	eval score: 82.61 
+	current best eval score: 82.62 
+lr: 0.000002
+===========Epoch 35 's train==========
+iter:  0 loss: -0.030016 disagreement: -0.999994
+iter:  100 loss: -0.035771 disagreement: -0.999994
+iter:  200 loss: -0.015788 disagreement: -0.999993
+iter:  300 loss: 0.003886 disagreement: -0.999994
+iter:  400 loss: -0.062008 disagreement: -0.999994
+iter:  500 loss: -0.027654 disagreement: -0.999994
+iter:  600 loss: 0.017671 disagreement: -0.999994
+iter:  700 loss: 0.004314 disagreement: -0.999994
+iter:  800 loss: -0.059873 disagreement: -0.999994
+iter:  900 loss: -0.051896 disagreement: -0.999994
+iter:  1000 loss: -0.004393 disagreement: -0.999994
+iter:  1100 loss: 0.016188 disagreement: -0.999995
+iter:  1200 loss: 0.051557 disagreement: -0.999994
+iter:  1300 loss: 0.029489 disagreement: -0.999994
+iter:  1400 loss: -0.049014 disagreement: -0.999994
+iter:  1500 loss: -0.045557 disagreement: -0.999994
+iter:  1600 loss: -0.043613 disagreement: -0.999995
+iter:  1700 loss: 0.009098 disagreement: -0.999994
+iter:  1800 loss: -0.067501 disagreement: -0.999994
+iter:  1900 loss: -0.047429 disagreement: -0.999994
+iter:  2000 loss: -0.077870 disagreement: -0.999994
+iter:  2100 loss: -0.057477 disagreement: -0.999994
+iter:  2200 loss: -0.063896 disagreement: -0.999994
+iter:  2300 loss: -0.050224 disagreement: -0.999994
+iter:  2400 loss: -0.037973 disagreement: -0.999994
+iter:  2500 loss: -0.063289 disagreement: -0.999994
+iter:  2600 loss: -0.060931 disagreement: -0.999994
+iter:  2700 loss: -0.086518 disagreement: -0.999994
+iter:  2800 loss: 0.008375 disagreement: -0.999994
+iter:  2900 loss: -0.065696 disagreement: -0.999994
+iter:  3000 loss: 0.037991 disagreement: -0.999994
+iter:  3100 loss: -0.014943 disagreement: -0.999994
+iter:  3200 loss: 0.133194 disagreement: -0.999994
+	train_loss: -0.07
+===========Epoch 35 's test==========
+epoch 35, time: 1335.50
+	eval score: 82.57 
+	current best eval score: 82.62 
+lr: 0.000002
+===========Epoch 36 's train==========
+iter:  0 loss: -0.050955 disagreement: -0.999994
+iter:  100 loss: -0.066736 disagreement: -0.999994
+iter:  200 loss: -0.000688 disagreement: -0.999994
+iter:  300 loss: -0.099844 disagreement: -0.999994
+iter:  400 loss: -0.052261 disagreement: -0.999994
+iter:  500 loss: -0.039617 disagreement: -0.999994
+iter:  600 loss: 0.008136 disagreement: -0.999994
+iter:  700 loss: -0.097572 disagreement: -0.999994
+iter:  800 loss: -0.092130 disagreement: -0.999994
+iter:  900 loss: -0.009129 disagreement: -0.999994
+iter:  1000 loss: 0.046040 disagreement: -0.999994
+iter:  1100 loss: 0.064493 disagreement: -0.999995
+iter:  1200 loss: -0.058937 disagreement: -0.999994
+iter:  1300 loss: -0.047916 disagreement: -0.999994
+iter:  1400 loss: -0.067833 disagreement: -0.999994
+iter:  1500 loss: 0.064462 disagreement: -0.999994
+iter:  1600 loss: 0.017793 disagreement: -0.999994
+iter:  1700 loss: 0.128623 disagreement: -0.999994
+iter:  1800 loss: 0.023198 disagreement: -0.999995
+iter:  1900 loss: -0.080249 disagreement: -0.999995
+iter:  2000 loss: -0.025295 disagreement: -0.999994
+iter:  2100 loss: 0.084735 disagreement: -0.999994
+iter:  2200 loss: 0.130916 disagreement: -0.999994
+iter:  2300 loss: -0.002458 disagreement: -0.999994
+iter:  2400 loss: 0.092594 disagreement: -0.999995
+iter:  2500 loss: 0.012196 disagreement: -0.999994
+iter:  2600 loss: -0.014926 disagreement: -0.999994
+iter:  2700 loss: 0.041673 disagreement: -0.999994
+iter:  2800 loss: -0.058093 disagreement: -0.999994
+iter:  2900 loss: -0.039245 disagreement: -0.999994
+iter:  3000 loss: 0.073167 disagreement: -0.999994
+iter:  3100 loss: 0.066257 disagreement: -0.999994
+iter:  3200 loss: 0.000965 disagreement: -0.999994
+	train_loss: -0.07
+===========Epoch 36 's test==========
+epoch 36, time: 1420.73
+	eval score: 82.57 
+	current best eval score: 82.62 
+lr: 0.000002
+===========Epoch 37 's train==========
+iter:  0 loss: -0.056904 disagreement: -0.999994
+iter:  100 loss: -0.019238 disagreement: -0.999994
+iter:  200 loss: 0.012180 disagreement: -0.999994
+iter:  300 loss: -0.049854 disagreement: -0.999994
+iter:  400 loss: 0.077850 disagreement: -0.999994
+iter:  500 loss: -0.082663 disagreement: -0.999994
+iter:  600 loss: 0.088762 disagreement: -0.999994
+iter:  700 loss: -0.040742 disagreement: -0.999994
+iter:  800 loss: 0.020285 disagreement: -0.999995
+iter:  900 loss: -0.047050 disagreement: -0.999994
+iter:  1000 loss: -0.072763 disagreement: -0.999995
+iter:  1100 loss: -0.029546 disagreement: -0.999994
+iter:  1200 loss: 0.070484 disagreement: -0.999995
+iter:  1300 loss: -0.057331 disagreement: -0.999994
+iter:  1400 loss: -0.008756 disagreement: -0.999994
+iter:  1500 loss: -0.062915 disagreement: -0.999995
+iter:  1600 loss: 0.072303 disagreement: -0.999994
+iter:  1700 loss: -0.025235 disagreement: -0.999995
+iter:  1800 loss: -0.054533 disagreement: -0.999994
+iter:  1900 loss: -0.013748 disagreement: -0.999994
+iter:  2000 loss: -0.083321 disagreement: -0.999994
+iter:  2100 loss: 0.032399 disagreement: -0.999994
+iter:  2200 loss: -0.049968 disagreement: -0.999995
+iter:  2300 loss: 0.046763 disagreement: -0.999994
+iter:  2400 loss: -0.042790 disagreement: -0.999995
+iter:  2500 loss: 0.125335 disagreement: -0.999994
+iter:  2600 loss: -0.042623 disagreement: -0.999994
+iter:  2700 loss: -0.071069 disagreement: -0.999995
+iter:  2800 loss: -0.087451 disagreement: -0.999994
+iter:  2900 loss: -0.090502 disagreement: -0.999994
+iter:  3000 loss: -0.023955 disagreement: -0.999994
+iter:  3100 loss: -0.009063 disagreement: -0.999994
+iter:  3200 loss: -0.083477 disagreement: -0.999994
+	train_loss: -0.07
+===========Epoch 37 's test==========
+epoch 37, time: 1353.34
+	eval score: 82.56 
+	current best eval score: 82.62 
+lr: 0.000002
+===========Epoch 38 's train==========
+iter:  0 loss: -0.048440 disagreement: -0.999994
+iter:  100 loss: -0.034812 disagreement: -0.999994
+iter:  200 loss: -0.046168 disagreement: -0.999995
+iter:  300 loss: 0.061977 disagreement: -0.999994
+iter:  400 loss: 0.135131 disagreement: -0.999994
+iter:  500 loss: -0.096594 disagreement: -0.999995
+iter:  600 loss: 0.095952 disagreement: -0.999994
+iter:  700 loss: -0.034459 disagreement: -0.999994
+iter:  800 loss: -0.054838 disagreement: -0.999994
+iter:  900 loss: -0.035186 disagreement: -0.999994
+iter:  1000 loss: -0.048078 disagreement: -0.999994
+iter:  1100 loss: 0.212133 disagreement: -0.999994
+iter:  1200 loss: -0.070099 disagreement: -0.999994
+iter:  1300 loss: 0.000183 disagreement: -0.999994
+iter:  1400 loss: -0.065116 disagreement: -0.999995
+iter:  1500 loss: -0.091228 disagreement: -0.999995
+iter:  1600 loss: -0.011273 disagreement: -0.999995
+iter:  1700 loss: -0.063988 disagreement: -0.999994
+iter:  1800 loss: -0.001665 disagreement: -0.999994
+iter:  1900 loss: -0.071579 disagreement: -0.999994
+iter:  2000 loss: 0.003694 disagreement: -0.999994
+iter:  2100 loss: 0.058934 disagreement: -0.999994
+iter:  2200 loss: 0.145247 disagreement: -0.999994
+iter:  2300 loss: -0.073015 disagreement: -0.999994
+iter:  2400 loss: -0.078655 disagreement: -0.999994
+iter:  2500 loss: -0.043248 disagreement: -0.999994
+iter:  2600 loss: -0.064696 disagreement: -0.999994
+iter:  2700 loss: -0.048181 disagreement: -0.999994
+iter:  2800 loss: -0.021811 disagreement: -0.999994
+iter:  2900 loss: -0.092788 disagreement: -0.999995
+iter:  3000 loss: 0.044967 disagreement: -0.999994
+iter:  3100 loss: -0.080396 disagreement: -0.999994
+iter:  3200 loss: -0.059336 disagreement: -0.999994
+	train_loss: -0.07
+===========Epoch 38 's test==========
+epoch 38, time: 1307.63
+	eval score: 82.56 
+	current best eval score: 82.62 
+lr: 0.000002
+===========Epoch 39 's train==========
+iter:  0 loss: -0.003511 disagreement: -0.999994
+iter:  100 loss: 0.063900 disagreement: -0.999994
+iter:  200 loss: 0.077169 disagreement: -0.999994
+iter:  300 loss: -0.017641 disagreement: -0.999994
+iter:  400 loss: -0.082414 disagreement: -0.999994
+iter:  500 loss: -0.053931 disagreement: -0.999994
+iter:  600 loss: -0.015467 disagreement: -0.999994
+iter:  700 loss: -0.052224 disagreement: -0.999994
+iter:  800 loss: 0.053480 disagreement: -0.999994
+iter:  900 loss: -0.027703 disagreement: -0.999994
+iter:  1000 loss: -0.040783 disagreement: -0.999994
+iter:  1100 loss: 0.023933 disagreement: -0.999994
+iter:  1200 loss: -0.009672 disagreement: -0.999994
+iter:  1300 loss: -0.088989 disagreement: -0.999994
+iter:  1400 loss: -0.054688 disagreement: -0.999994
+iter:  1500 loss: -0.039227 disagreement: -0.999995
+iter:  1600 loss: -0.048240 disagreement: -0.999994
+iter:  1700 loss: 0.078691 disagreement: -0.999994
+iter:  1800 loss: 0.063567 disagreement: -0.999994
+iter:  1900 loss: -0.045865 disagreement: -0.999994
+iter:  2000 loss: -0.062800 disagreement: -0.999994
+iter:  2100 loss: -0.062377 disagreement: -0.999994
+iter:  2200 loss: 0.010681 disagreement: -0.999994
+iter:  2300 loss: -0.070046 disagreement: -0.999994
+iter:  2400 loss: -0.062931 disagreement: -0.999994
+iter:  2500 loss: 0.017379 disagreement: -0.999995
+iter:  2600 loss: -0.082982 disagreement: -0.999994
+iter:  2700 loss: -0.033231 disagreement: -0.999995
+iter:  2800 loss: -0.039529 disagreement: -0.999995
+iter:  2900 loss: -0.031074 disagreement: -0.999994
+iter:  3000 loss: -0.054113 disagreement: -0.999994
+iter:  3100 loss: 0.025024 disagreement: -0.999994
+iter:  3200 loss: -0.015661 disagreement: -0.999994
+	train_loss: -0.07
+===========Epoch 39 's test==========
+epoch 39, time: 1415.56
+	eval score: 82.56 
+	current best eval score: 82.62 
+lr: 0.000002
+===========Epoch 40 's train==========
+iter:  0 loss: -0.066795 disagreement: -0.999995
+iter:  100 loss: 0.029825 disagreement: -0.999994
+iter:  200 loss: 0.014046 disagreement: -0.999994
+iter:  300 loss: -0.005596 disagreement: -0.999994
+iter:  400 loss: -0.052474 disagreement: -0.999994
+iter:  500 loss: -0.057308 disagreement: -0.999994
+iter:  600 loss: -0.034488 disagreement: -0.999994
+iter:  700 loss: -0.048899 disagreement: -0.999994
+iter:  800 loss: -0.065560 disagreement: -0.999994
+iter:  900 loss: 0.019824 disagreement: -0.999994
+iter:  1000 loss: -0.026743 disagreement: -0.999994
+iter:  1100 loss: -0.076710 disagreement: -0.999995
+iter:  1200 loss: 0.085992 disagreement: -0.999994
+iter:  1300 loss: -0.090036 disagreement: -0.999994
+iter:  1400 loss: -0.077187 disagreement: -0.999994
+iter:  1500 loss: -0.065907 disagreement: -0.999994
+iter:  1600 loss: -0.065019 disagreement: -0.999994
+iter:  1700 loss: -0.086078 disagreement: -0.999994
+iter:  1800 loss: 0.088263 disagreement: -0.999994
+iter:  1900 loss: -0.041286 disagreement: -0.999994
+iter:  2000 loss: -0.042369 disagreement: -0.999994
+iter:  2100 loss: -0.086410 disagreement: -0.999994
+iter:  2200 loss: -0.011105 disagreement: -0.999994
+iter:  2300 loss: 0.067544 disagreement: -0.999995
+iter:  2400 loss: -0.032932 disagreement: -0.999994
+iter:  2500 loss: 0.040675 disagreement: -0.999994
+iter:  2600 loss: 0.059991 disagreement: -0.999995
+iter:  2700 loss: -0.077298 disagreement: -0.999994
+iter:  2800 loss: -0.030491 disagreement: -0.999994
+iter:  2900 loss: -0.056534 disagreement: -0.999994
+iter:  3000 loss: 0.032209 disagreement: -0.999994
+iter:  3100 loss: -0.036884 disagreement: -0.999994
+iter:  3200 loss: -0.093604 disagreement: -0.999994
+	train_loss: -0.07
+===========Epoch 40 's test==========
+epoch 40, time: 1354.73
+	eval score: 82.56 
+	current best eval score: 82.62 
+lr: 0.000002
+===========Epoch 41 's train==========
+iter:  0 loss: -0.044800 disagreement: -0.999994
+iter:  100 loss: 0.087157 disagreement: -0.999994
+iter:  200 loss: -0.064932 disagreement: -0.999994
+iter:  300 loss: -0.071778 disagreement: -0.999994
+iter:  400 loss: 0.064197 disagreement: -0.999994
+iter:  500 loss: -0.007686 disagreement: -0.999994
+iter:  600 loss: 0.149082 disagreement: -0.999994
+iter:  700 loss: -0.050113 disagreement: -0.999995
+iter:  800 loss: 0.089386 disagreement: -0.999994
+iter:  900 loss: 0.006373 disagreement: -0.999994
+iter:  1000 loss: -0.075629 disagreement: -0.999994
+iter:  1100 loss: 0.001819 disagreement: -0.999994
+iter:  1200 loss: -0.062456 disagreement: -0.999995
+iter:  1300 loss: -0.059673 disagreement: -0.999994
+iter:  1400 loss: 0.062603 disagreement: -0.999994
+iter:  1500 loss: 0.035359 disagreement: -0.999994
+iter:  1600 loss: 0.079401 disagreement: -0.999994
+iter:  1700 loss: -0.031305 disagreement: -0.999994
+iter:  1800 loss: -0.033804 disagreement: -0.999994
+iter:  1900 loss: 0.120004 disagreement: -0.999995
+iter:  2000 loss: -0.092909 disagreement: -0.999995
+iter:  2100 loss: -0.092847 disagreement: -0.999994
+iter:  2200 loss: -0.025298 disagreement: -0.999994
+iter:  2300 loss: -0.029228 disagreement: -0.999994
+iter:  2400 loss: -0.051008 disagreement: -0.999994
+iter:  2500 loss: -0.041111 disagreement: -0.999994
+iter:  2600 loss: -0.060242 disagreement: -0.999994
+iter:  2700 loss: 0.032668 disagreement: -0.999994
+iter:  2800 loss: 0.032091 disagreement: -0.999994
+iter:  2900 loss: 0.053124 disagreement: -0.999995
+iter:  3000 loss: -0.063097 disagreement: -0.999994
+iter:  3100 loss: -0.072769 disagreement: -0.999994
+iter:  3200 loss: 0.012157 disagreement: -0.999994
+	train_loss: -0.07
+===========Epoch 41 's test==========
+epoch 41, time: 1325.14
+	eval score: 82.59 
+	current best eval score: 82.62 
+lr: 0.000002
+===========Epoch 42 's train==========
+iter:  0 loss: -0.034860 disagreement: -0.999994
+iter:  100 loss: -0.077372 disagreement: -0.999994
+iter:  200 loss: 0.047185 disagreement: -0.999994
+iter:  300 loss: -0.034142 disagreement: -0.999994
+iter:  400 loss: -0.061771 disagreement: -0.999994
+iter:  500 loss: -0.084566 disagreement: -0.999994
+iter:  600 loss: -0.099999 disagreement: -0.999994
+iter:  700 loss: 0.008441 disagreement: -0.999994
+iter:  800 loss: -0.022476 disagreement: -0.999994
+iter:  900 loss: -0.076240 disagreement: -0.999994
+iter:  1000 loss: 0.032682 disagreement: -0.999994
+iter:  1100 loss: 0.013222 disagreement: -0.999994
+iter:  1200 loss: -0.027509 disagreement: -0.999994
+iter:  1300 loss: -0.067566 disagreement: -0.999994
+iter:  1400 loss: -0.080384 disagreement: -0.999994
+iter:  1500 loss: -0.019835 disagreement: -0.999994
+iter:  1600 loss: -0.066679 disagreement: -0.999994
+iter:  1700 loss: -0.097014 disagreement: -0.999994
+iter:  1800 loss: -0.039921 disagreement: -0.999994
+iter:  1900 loss: -0.037757 disagreement: -0.999994
+iter:  2000 loss: -0.031836 disagreement: -0.999994
+iter:  2100 loss: -0.086975 disagreement: -0.999994
+iter:  2200 loss: 0.001659 disagreement: -0.999993
+iter:  2300 loss: -0.008758 disagreement: -0.999994
+iter:  2400 loss: -0.085580 disagreement: -0.999995
+iter:  2500 loss: -0.089064 disagreement: -0.999994
+iter:  2600 loss: -0.067758 disagreement: -0.999994
+iter:  2700 loss: -0.081126 disagreement: -0.999992
+iter:  2800 loss: -0.018534 disagreement: -0.999994
+iter:  2900 loss: -0.078902 disagreement: -0.999994
+iter:  3000 loss: -0.018814 disagreement: -0.999994
+iter:  3100 loss: -0.050130 disagreement: -0.999994
+iter:  3200 loss: 0.046462 disagreement: -0.999994
+	train_loss: -0.07
+===========Epoch 42 's test==========
+epoch 42, time: 1367.99
+	eval score: 82.57 
+	current best eval score: 82.62 
+lr: 0.000002
+===========Epoch 43 's train==========
+iter:  0 loss: -0.078854 disagreement: -0.999994
+iter:  100 loss: -0.018089 disagreement: -0.999994
+iter:  200 loss: -0.073668 disagreement: -0.999994
+iter:  300 loss: 0.022268 disagreement: -0.999994
+iter:  400 loss: -0.056076 disagreement: -0.999994
+iter:  500 loss: -0.009249 disagreement: -0.999994
+iter:  600 loss: 0.024370 disagreement: -0.999994
+iter:  700 loss: -0.053134 disagreement: -0.999995
+iter:  800 loss: -0.054205 disagreement: -0.999995
+iter:  900 loss: -0.051716 disagreement: -0.999994
+iter:  1000 loss: 0.013962 disagreement: -0.999994
+iter:  1100 loss: 0.055397 disagreement: -0.999994
+iter:  1200 loss: -0.051274 disagreement: -0.999994
+iter:  1300 loss: -0.011519 disagreement: -0.999994
+iter:  1400 loss: -0.049994 disagreement: -0.999994
+iter:  1500 loss: -0.079091 disagreement: -0.999994
+iter:  1600 loss: -0.056066 disagreement: -0.999994
+iter:  1700 loss: -0.050612 disagreement: -0.999994
+iter:  1800 loss: 0.130994 disagreement: -0.999994
+iter:  1900 loss: -0.077704 disagreement: -0.999994
+iter:  2000 loss: -0.065160 disagreement: -0.999995
+iter:  2100 loss: -0.097824 disagreement: -0.999994
+iter:  2200 loss: 0.059863 disagreement: -0.999992
+iter:  2300 loss: -0.020258 disagreement: -0.999994
+iter:  2400 loss: 0.183509 disagreement: -0.999994
+iter:  2500 loss: -0.086552 disagreement: -0.999994
+iter:  2600 loss: 0.021809 disagreement: -0.999994
+iter:  2700 loss: -0.030015 disagreement: -0.999994
+iter:  2800 loss: 0.013828 disagreement: -0.999994
+iter:  2900 loss: 0.015081 disagreement: -0.999994
+iter:  3000 loss: 0.090998 disagreement: -0.999995
+iter:  3100 loss: 0.076111 disagreement: -0.999994
+iter:  3200 loss: 0.013372 disagreement: -0.999994
+	train_loss: -0.08
+===========Epoch 43 's test==========
+epoch 43, time: 1371.64
+	eval score: 82.57 
+	current best eval score: 82.62 
+lr: 0.000002
+===========Epoch 44 's train==========
+iter:  0 loss: 0.035716 disagreement: -0.999994
+iter:  100 loss: 0.010625 disagreement: -0.999995
+iter:  200 loss: -0.093199 disagreement: -0.999994
+iter:  300 loss: -0.088253 disagreement: -0.999994
+iter:  400 loss: 0.073634 disagreement: -0.999994
+iter:  500 loss: -0.033785 disagreement: -0.999994
+iter:  600 loss: 0.053386 disagreement: -0.999994
+iter:  700 loss: -0.059960 disagreement: -0.999994
+iter:  800 loss: 0.012675 disagreement: -0.999994
+iter:  900 loss: -0.051271 disagreement: -0.999994
+iter:  1000 loss: -0.004144 disagreement: -0.999994
+iter:  1100 loss: -0.003317 disagreement: -0.999994
+iter:  1200 loss: 0.059318 disagreement: -0.999994
+iter:  1300 loss: -0.008840 disagreement: -0.999994
+iter:  1400 loss: -0.071554 disagreement: -0.999994
+iter:  1500 loss: -0.001646 disagreement: -0.999994
+iter:  1600 loss: -0.056933 disagreement: -0.999994
+iter:  1700 loss: 0.004926 disagreement: -0.999994
+iter:  1800 loss: -0.002460 disagreement: -0.999994
+iter:  1900 loss: -0.013775 disagreement: -0.999994
+iter:  2000 loss: -0.051480 disagreement: -0.999994
+iter:  2100 loss: 0.004155 disagreement: -0.999994
+iter:  2200 loss: 0.117844 disagreement: -0.999994
+iter:  2300 loss: -0.088415 disagreement: -0.999994
+iter:  2400 loss: -0.082035 disagreement: -0.999994
+iter:  2500 loss: -0.029706 disagreement: -0.999994
+iter:  2600 loss: -0.037970 disagreement: -0.999994
+iter:  2700 loss: -0.084639 disagreement: -0.999994
+iter:  2800 loss: -0.057326 disagreement: -0.999994
+iter:  2900 loss: -0.050655 disagreement: -0.999995
+iter:  3000 loss: -0.030449 disagreement: -0.999994
+iter:  3100 loss: -0.040819 disagreement: -0.999994
+iter:  3200 loss: -0.077054 disagreement: -0.999994
+	train_loss: -0.07
+===========Epoch 44 's test==========
+epoch 44, time: 1290.15
+	eval score: 82.57 
+	current best eval score: 82.62 
+lr: 0.000002
+===========Epoch 45 's train==========
+iter:  0 loss: -0.065737 disagreement: -0.999994
+iter:  100 loss: -0.046504 disagreement: -0.999994
+iter:  200 loss: -0.099999 disagreement: -0.999994
+iter:  300 loss: 0.028860 disagreement: -0.999994
+iter:  400 loss: -0.004543 disagreement: -0.999995
+iter:  500 loss: -0.067011 disagreement: -0.999994
+iter:  600 loss: -0.061695 disagreement: -0.999994
+iter:  700 loss: -0.017503 disagreement: -0.999994
+iter:  800 loss: -0.027890 disagreement: -0.999995
+iter:  900 loss: -0.059369 disagreement: -0.999994
+iter:  1000 loss: -0.047519 disagreement: -0.999994
+iter:  1100 loss: -0.082296 disagreement: -0.999994
+iter:  1200 loss: -0.039425 disagreement: -0.999994
+iter:  1300 loss: -0.084034 disagreement: -0.999994
+iter:  1400 loss: -0.071260 disagreement: -0.999993
+iter:  1500 loss: -0.068552 disagreement: -0.999994
+iter:  1600 loss: 0.056443 disagreement: -0.999994
+iter:  1700 loss: -0.062511 disagreement: -0.999994
+iter:  1800 loss: -0.044364 disagreement: -0.999994
+iter:  1900 loss: -0.049429 disagreement: -0.999994
+iter:  2000 loss: 0.027606 disagreement: -0.999994
+iter:  2100 loss: -0.070919 disagreement: -0.999994
+iter:  2200 loss: 0.102432 disagreement: -0.999994
+iter:  2300 loss: -0.020346 disagreement: -0.999994
+iter:  2400 loss: 0.100791 disagreement: -0.999994
+iter:  2500 loss: -0.038373 disagreement: -0.999994
+iter:  2600 loss: -0.034586 disagreement: -0.999994
+iter:  2700 loss: -0.008702 disagreement: -0.999994
+iter:  2800 loss: -0.060169 disagreement: -0.999994
+iter:  2900 loss: 0.068676 disagreement: -0.999994
+iter:  3000 loss: -0.016952 disagreement: -0.999994
+iter:  3100 loss: -0.074034 disagreement: -0.999995
+iter:  3200 loss: 0.005244 disagreement: -0.999994
+	train_loss: -0.07
+===========Epoch 45 's test==========
+epoch 45, time: 1342.06
+	eval score: 82.56 
+	current best eval score: 82.62 
+lr: 0.000002
+===========Epoch 46 's train==========
+iter:  0 loss: 0.123483 disagreement: -0.999995
+iter:  100 loss: 0.107631 disagreement: -0.999994
+iter:  200 loss: -0.073460 disagreement: -0.999994
+iter:  300 loss: 0.122312 disagreement: -0.999994
+iter:  400 loss: -0.077735 disagreement: -0.999995
+iter:  500 loss: -0.025881 disagreement: -0.999995
+iter:  600 loss: -0.024099 disagreement: -0.999995
+iter:  700 loss: 0.085085 disagreement: -0.999994
+iter:  800 loss: 0.070337 disagreement: -0.999994
+iter:  900 loss: -0.067615 disagreement: -0.999994
+iter:  1000 loss: -0.085751 disagreement: -0.999994
+iter:  1100 loss: 0.003458 disagreement: -0.999995
+iter:  1200 loss: 0.141956 disagreement: -0.999994
+iter:  1300 loss: -0.048335 disagreement: -0.999994
+iter:  1400 loss: 0.025086 disagreement: -0.999994
+iter:  1500 loss: -0.011248 disagreement: -0.999994
+iter:  1600 loss: -0.076239 disagreement: -0.999995
+iter:  1700 loss: 0.024083 disagreement: -0.999994
+iter:  1800 loss: -0.016056 disagreement: -0.999994
+iter:  1900 loss: -0.050949 disagreement: -0.999994
+iter:  2000 loss: 0.093732 disagreement: -0.999994
+iter:  2100 loss: -0.013458 disagreement: -0.999994
+iter:  2200 loss: -0.054743 disagreement: -0.999994
+iter:  2300 loss: -0.081321 disagreement: -0.999994
+iter:  2400 loss: 0.093258 disagreement: -0.999994
+iter:  2500 loss: -0.083021 disagreement: -0.999995
+iter:  2600 loss: -0.077550 disagreement: -0.999995
+iter:  2700 loss: 0.023144 disagreement: -0.999994
+iter:  2800 loss: -0.052734 disagreement: -0.999994
+iter:  2900 loss: -0.010797 disagreement: -0.999994
+iter:  3000 loss: -0.049925 disagreement: -0.999995
+iter:  3100 loss: -0.066442 disagreement: -0.999994
+iter:  3200 loss: -0.048902 disagreement: -0.999994
+	train_loss: -0.07
+===========Epoch 46 's test==========
+epoch 46, time: 1374.15
+	eval score: 82.59 
+	current best eval score: 82.62 
+lr: 0.000002
+===========Epoch 47 's train==========
+iter:  0 loss: -0.035067 disagreement: -0.999995
+iter:  100 loss: -0.059877 disagreement: -0.999994
+iter:  200 loss: -0.039660 disagreement: -0.999994
+iter:  300 loss: -0.016743 disagreement: -0.999995
+iter:  400 loss: 0.137365 disagreement: -0.999994
+iter:  500 loss: -0.053412 disagreement: -0.999994
+iter:  600 loss: -0.069415 disagreement: -0.999994
+iter:  700 loss: -0.002076 disagreement: -0.999994
+iter:  800 loss: -0.055467 disagreement: -0.999994
+iter:  900 loss: 0.035356 disagreement: -0.999994
+iter:  1000 loss: -0.035755 disagreement: -0.999994
+iter:  1100 loss: -0.039471 disagreement: -0.999995
+iter:  1200 loss: 0.106949 disagreement: -0.999994
+iter:  1300 loss: 0.095694 disagreement: -0.999994
+iter:  1400 loss: -0.031375 disagreement: -0.999994
+iter:  1500 loss: 0.114422 disagreement: -0.999994
+iter:  1600 loss: 0.060668 disagreement: -0.999994
+iter:  1700 loss: -0.096823 disagreement: -0.999995
+iter:  1800 loss: 0.040343 disagreement: -0.999994
+iter:  1900 loss: 0.070404 disagreement: -0.999994
+iter:  2000 loss: -0.032901 disagreement: -0.999994
+iter:  2100 loss: -0.035148 disagreement: -0.999995
+iter:  2200 loss: 0.001388 disagreement: -0.999994
+iter:  2300 loss: -0.044340 disagreement: -0.999994
+iter:  2400 loss: 0.036548 disagreement: -0.999994
+iter:  2500 loss: -0.006771 disagreement: -0.999994
+iter:  2600 loss: -0.048242 disagreement: -0.999994
+iter:  2700 loss: 0.053358 disagreement: -0.999994
+iter:  2800 loss: -0.068933 disagreement: -0.999994
+iter:  2900 loss: -0.054320 disagreement: -0.999994
+iter:  3000 loss: 0.120451 disagreement: -0.999994
+iter:  3100 loss: -0.057835 disagreement: -0.999995
+iter:  3200 loss: -0.021429 disagreement: -0.999994
+	train_loss: -0.07
+===========Epoch 47 's test==========
+epoch 47, time: 1293.38
+	eval score: 82.56 
+	current best eval score: 82.62 
+lr: 0.000002
+===========Epoch 48 's train==========
+iter:  0 loss: -0.014935 disagreement: -0.999994
+iter:  100 loss: -0.071201 disagreement: -0.999994
+iter:  200 loss: -0.052876 disagreement: -0.999994
+iter:  300 loss: 0.000371 disagreement: -0.999994
+iter:  400 loss: -0.072979 disagreement: -0.999995
+iter:  500 loss: -0.021983 disagreement: -0.999994
+iter:  600 loss: 0.059166 disagreement: -0.999994
+iter:  700 loss: 0.041091 disagreement: -0.999994
+iter:  800 loss: -0.018693 disagreement: -0.999994
+iter:  900 loss: -0.080129 disagreement: -0.999994
+iter:  1000 loss: -0.030734 disagreement: -0.999995
+iter:  1100 loss: -0.044000 disagreement: -0.999994
+iter:  1200 loss: 0.035747 disagreement: -0.999994
+iter:  1300 loss: 0.022913 disagreement: -0.999994
+iter:  1400 loss: 0.026626 disagreement: -0.999994
+iter:  1500 loss: -0.025026 disagreement: -0.999994
+iter:  1600 loss: -0.062095 disagreement: -0.999994
+iter:  1700 loss: -0.059264 disagreement: -0.999994
+iter:  1800 loss: -0.021272 disagreement: -0.999994
+iter:  1900 loss: 0.035429 disagreement: -0.999994
+iter:  2000 loss: -0.095563 disagreement: -0.999995
+iter:  2100 loss: -0.045598 disagreement: -0.999994
+iter:  2200 loss: 0.006324 disagreement: -0.999994
+iter:  2300 loss: -0.055170 disagreement: -0.999994
+iter:  2400 loss: -0.057609 disagreement: -0.999994
+iter:  2500 loss: -0.038592 disagreement: -0.999994
+iter:  2600 loss: -0.067224 disagreement: -0.999994
+iter:  2700 loss: 0.057882 disagreement: -0.999994
+iter:  2800 loss: 0.027500 disagreement: -0.999995
+iter:  2900 loss: 0.064558 disagreement: -0.999994
+iter:  3000 loss: 0.022751 disagreement: -0.999994
+iter:  3100 loss: -0.012946 disagreement: -0.999995
+iter:  3200 loss: -0.038719 disagreement: -0.999994
+	train_loss: -0.07
+===========Epoch 48 's test==========
+epoch 48, time: 1304.10
+	eval score: 82.57 
+	current best eval score: 82.62 
+lr: 0.000002
+===========Epoch 49 's train==========
+iter:  0 loss: -0.098800 disagreement: -0.999994
+iter:  100 loss: -0.049090 disagreement: -0.999994
+iter:  200 loss: -0.057962 disagreement: -0.999994
+iter:  300 loss: -0.091520 disagreement: -0.999994
+iter:  400 loss: -0.088387 disagreement: -0.999994
+iter:  500 loss: 0.040825 disagreement: -0.999993
+iter:  600 loss: -0.016695 disagreement: -0.999994
+iter:  700 loss: 0.064609 disagreement: -0.999994
+iter:  800 loss: -0.079836 disagreement: -0.999994
+iter:  900 loss: 0.000365 disagreement: -0.999995
+iter:  1000 loss: -0.014134 disagreement: -0.999994
+iter:  1100 loss: -0.082800 disagreement: -0.999994
+iter:  1200 loss: -0.026372 disagreement: -0.999994
+iter:  1300 loss: -0.059605 disagreement: -0.999994
+iter:  1400 loss: -0.009796 disagreement: -0.999994
+iter:  1500 loss: 0.275481 disagreement: -0.999994
+iter:  1600 loss: 0.015437 disagreement: -0.999994
+iter:  1700 loss: 0.032865 disagreement: -0.999994
+iter:  1800 loss: -0.052001 disagreement: -0.999994
+iter:  1900 loss: -0.030360 disagreement: -0.999994
+iter:  2000 loss: -0.090302 disagreement: -0.999994
+iter:  2100 loss: -0.008690 disagreement: -0.999994
+iter:  2200 loss: 0.120658 disagreement: -0.999995
+iter:  2300 loss: 0.157112 disagreement: -0.999994
+iter:  2400 loss: -0.050950 disagreement: -0.999994
+iter:  2500 loss: -0.060063 disagreement: -0.999995
+iter:  2600 loss: -0.076725 disagreement: -0.999995
+iter:  2700 loss: -0.054944 disagreement: -0.999994
+iter:  2800 loss: -0.069982 disagreement: -0.999994
+iter:  2900 loss: 0.071828 disagreement: -0.999995
+iter:  3000 loss: -0.019669 disagreement: -0.999994
+iter:  3100 loss: -0.085943 disagreement: -0.999994
+iter:  3200 loss: 0.064628 disagreement: -0.999994
+	train_loss: -0.07
+===========Epoch 49 's test==========
+epoch 49, time: 1387.67
+	eval score: 82.57 
+	current best eval score: 82.62 
+	final best eval score: 82.62 
